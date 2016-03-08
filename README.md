@@ -9,7 +9,7 @@
 
 Automatic car parking system predstavlja sistem automatskog pronalaženja mjesta za parkiranje i parkiranja automobila bez dodira vlasnika automobila sa unutrašnjosti parkirališta. Problem koji je do sada imao supervizor je što primarno nije imao uvid u podatke korisnika koji koristi parking, greške prilikom plaćajna istog, greške prilikom pronalazenja slobodnih mjesta i sl. Informacioni sistem će uveliko olakšati upravljanje dostupnim parking mjestima, upravljanje plaćanjem na bazi godišnjeg, mjesečnog, dnevnog ili eventualno obračuna vremena po satu, identifikaciju korisnika, *koja je ovdje i najbitnija stavka*. Takođe biti će omogućena opcija dostavljanja podataka o poslovanju firme **_SACP_** vlasniku iste. Sistem ce podržavati i opciju slanja obavještenja korisniku o eventualnom isteku najma parkinga i obračunu za prekoračenje - ukoliko do njega dođe. Omogućeno je i izdavanje fiskalnog računa korisniku te identifikacijskog koda svakom korisniku prilikom svakog korišenja parkirališta. 
 
-## **Procesi**
+## **Procesi** 
 
 **Registracija korisnika**
 Korisnik koji dolazi prvi put biva registrovan od strane dežurnog radnika koji mu izrađuje i člansku karticu. Prilikom registracije korisnik daje svoje lične podatke koje dežurni radnik unosi u sistem, također daje i svoj otisak prsta, što se koristi kao zadnji nivo identifikacije ukoliko korisnik izgubi člansku karticu ili identifikacijski kod koji dobije prilikom svakog korištenja.
