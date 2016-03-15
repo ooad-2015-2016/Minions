@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[Croatian]{babel}
+\usepackage[square, numbers, comma, sort&compress]{natbib}
+\usepackage{graphics}
+\usepackage{fullpage}
+\begin{document}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Naziv&Registracija\\
+\hline
+Opis&Korisnik daje lične podatke i otisak prsta,nakon toga ,na osnovu\\&unesenih podataka ,izdaje mu se članska kartica\\
+\hline
+Vezani zahtjevi&Korisnik želi registraciju unutar sistema automatskog parkiranja \\
+\hline
+Preduvjet&Korisnik prvi put dolazi u okruženje SAP-a\\
+\hline
+Posljedice-uspješan završetak&Korisnik dobiva člansku karticu ,omogućeno je korištenje SAP-a\\
+\hline
+Posljedice-neuspješan završetak&-\\
+\hline
+Primarni akteri&Korisnik,Dežurni radnik\\
+\hline
+Ostali akteri&-\\
+\hline
+Glavni tok&Korisnik daje dežurnom radniku potrebne lične podatke,\\&sistem bira random identifikacijski kod\\& koji ce biti dodjeljen novom korisniku,korisnik dobiva člansku\\& karticu,Zadnji vid zaštite i pristupa sistemu u slučaju gubitka\\& kartice,korisnik ostavlja otisak prsta.\\
+\hline
+Proširenje/Alternative&-\\
+\hline
+\end{tabular}
+\newline\newline
+Tok događaja-Uspješan završetak\newline\newline
+\begin{tabular}{|c|c|c|}
+\hline
+Korisnik&Sistem&Dežurni radnik\\
+\hline
+1.Daje lične podatke&&\\
+\hline
+&&2.Uzima podatke\\
+\hline
+&&3.Omogućava korisniku da ostavi\\&& otisak prsta\\
+\hline
+4.Daje otisak prsta&&\\
+\hline
+&&5.Prosljeđuje podatke sistemu\\
+\hline
+&6.Sprema podatke&\\
+\hline
+&7.Bira random broj za novog korisnika&\\
+\hline
+&8.Izrađuje korisničku karticu&\\
+\hline
+&&9.Preuzima karticu\\
+\hline
+&&10.Dodjeljuje karticu\\&&novom korisniku\\
+\hline
+\end{tabular}
+\end{center}
+\end{document}
