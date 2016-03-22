@@ -26,5 +26,27 @@ namespace ProjekatAutomaticCarParkingSystem
         {
             this.InitializeComponent();
         }
+
+        private void textBlock1_Copy1_SelectionChanged(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void textBox_Copy1_TextChanged(System.Object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+
+        private void checkBox_Checked(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
