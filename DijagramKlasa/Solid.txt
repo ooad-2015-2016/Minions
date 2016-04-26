@@ -1,0 +1,21 @@
+1. Princip pojedinaène odgovoronosti je zadovoljen jer svaka klasa ima samo jedan razlog za promjenu.
+Klase su konstruisane tako da nijedna ne obavlja previše aktivnosti odnosno može se reæi da svaka klasa
+ima samo jednu odgovornost.
+
+2. Otvoreno zatvoreni princip je zadovoljen. To možemo vidjeti na primjeru klase Osoba. Vidimo da klase Supervizor,
+Majstor, DežurnRadnik, Korisnik te Vlasnik sve naslijeðuju datu klasu što povlaèi sa sobom da je klasa Osoba 
+otvorena za nadogradnju a zatvorena za modifikaciju. To znaæi da ako mi želimo dodati neku novu klasu npr.
+Èuvar, tada bi klasa Èuvar samo naslijedila klasu Osoba te bi mi u klasi Èuvar mogli dodavati metode. Dakle,
+ništa se nije promjenilo na klasi Osoba, ona je samo nadograðena.
+
+3.Liskov princip zamjene je ispoštovan jer svaka klasa koja nasljeðuje neku drugu klasu uvijek æe morati definisati
+sve atribute. Tako naprimjer, ne može se desiti da klasa koja naslijedi baznu klasu ima atribute koje nije logièno 
+definisati za tu klasu. 
+
+4. Princip inverzije ovisnosti nije ispoštovan. Interface Osoba treba da se razdvoji na neku klasu koja æe predstavljati
+interface i drugu apstraktnu klasu Osoba jer odreðen broj klasa nasljeðuje klasu Osoba.
+
+5. Princip izoliranja interfejsa je ispoštovan jer nema tzv. "debelih" klasa odnosno klasa koje imaju veliki broj
+metoda. Princip bi bio narušen da smo imali veliki broj metoda koje klijenti rijetko ili skoro nikako pozivaju.
+Svaka klasa ima upravo one metode koje su potrebne i koje æe se èesto ako ne i uvijek pozivati.
+
