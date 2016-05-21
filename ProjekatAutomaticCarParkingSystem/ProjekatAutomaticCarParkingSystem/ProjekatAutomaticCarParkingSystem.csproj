@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Automobil.cs" />
+    <Compile Include="DezurniRadnik.cs" />
     <Compile Include="DolazakNaPosao.cs" />
     <Compile Include="IVozila.cs" />
     <Compile Include="Izvjestaj.cs" />
