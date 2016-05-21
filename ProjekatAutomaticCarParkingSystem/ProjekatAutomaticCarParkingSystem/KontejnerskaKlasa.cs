@@ -9,5 +9,6 @@ namespace ProjekatAutomaticCarParkingSystem
     class KontejnerskaKlasa
     {
         public static List<DolazakNaPosao> dolasci = new List<DolazakNaPosao>();
+        public static List<IzvjestajMajstora> izvjestajiMajstvora = new List<IzvjestajMajstora>();
     }
 }

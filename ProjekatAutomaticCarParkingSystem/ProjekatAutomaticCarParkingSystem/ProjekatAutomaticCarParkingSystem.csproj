@@ -96,12 +96,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DolazakNaPosao.cs" />
+    <Compile Include="Izvjestaj.cs" />
+    <Compile Include="IzvjestajAbstact.cs" />
     <Compile Include="IzvjestajMajstora.cs" />
     <Compile Include="KontejnerskaKlasa.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Majstor.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="Osobe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
