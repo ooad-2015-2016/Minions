@@ -95,6 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DolazakNaPosao.cs" />
+    <Compile Include="KontejnerskaKlasa.cs" />
     <Compile Include="Korisnik.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -102,6 +104,7 @@
     <Compile Include="Osoba.cs" />
     <Compile Include="Osobe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supervizor.cs" />
     <Compile Include="Vlasnik.cs" />
   </ItemGroup>
   <ItemGroup>
