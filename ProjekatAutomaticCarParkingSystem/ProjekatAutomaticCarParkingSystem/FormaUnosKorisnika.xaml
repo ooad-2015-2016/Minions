@@ -9,7 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="42*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="14*"/>
             <RowDefinition Height="36*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="36*"/>
@@ -40,28 +41,34 @@
             <ColumnDefinition Width="129*"/>
             <ColumnDefinition Width="36*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Dodaj" Grid.Column="3" HorizontalAlignment="Stretch" Margin="7.62939453125E-06,-7.62939453125E-06,-7.62939453125E-06,7.62939453125E-06" Grid.Row="21" VerticalAlignment="Stretch"/>
-        <Button x:Name="button1" Content="Nazad" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="21" VerticalAlignment="Stretch"/>
-        <TextBlock x:Name="textBlock" Grid.Column="1" Margin="0,0,0,-3.814697265625E-06" Grid.Row="1" TextWrapping="Wrap" Text="Ime"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="Prezime"/>
-        <TextBlock x:Name="textBlock2" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="Broj telefona"/>
-        <TextBlock x:Name="textBlock3" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="7" TextWrapping="Wrap" Text="Adresa"/>
-        <TextBlock x:Name="textBlock4" Grid.Column="1" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="9" TextWrapping="Wrap" Text="Datum rođenja"/>
-        <TextBlock x:Name="textBlock5" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="11" TextWrapping="Wrap" Text="Broj lične karte"/>
-        <TextBlock x:Name="textBlock6" Grid.Column="1" Grid.Row="13" TextWrapping="Wrap" Text="Username"/>
-        <TextBlock x:Name="textBlock7" Grid.Column="1" Grid.Row="15" TextWrapping="Wrap" Text="Password"/>
-        <TextBlock x:Name="textBlock8" Grid.Column="1" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="17" TextWrapping="Wrap" Text="Zanmanje"/>
-        <TextBlock x:Name="textBlock9" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="19" TextWrapping="Wrap" Text="Broj vozačke"/>
-        <TextBox x:Name="textBox" Grid.Column="3" Margin="7.62939453125E-06,-2.38418579101563E-07,-7.62939453125E-06,-3.57627868652344E-06" TextWrapping="Wrap" Text="TextBox" Grid.Row="1"/>
-        <TextBox x:Name="textBox1" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox2" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="5" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox3" Grid.Column="3" Margin="7.62939453125E-06,7.39097595214844E-06,-7.62939453125E-06,-7.39097595214844E-06" Grid.Row="7" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox4" Grid.Column="3" Margin="7.62939453125E-06,7.62939453125E-06,-7.62939453125E-06,-7.62939453125E-06" Grid.Row="11" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox5" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="13" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox6" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="15" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox7" Grid.Column="3" Margin="7.62939453125E-06,-7.86781311035156E-06,-7.62939453125E-06,7.86781311035156E-06" Grid.Row="17" TextWrapping="Wrap" Text="TextBox"/>
-        <TextBox x:Name="textBox8" Grid.Column="3" Margin="7.62939453125E-06,7.62939453125E-06,-7.62939453125E-06,-7.62939453125E-06" Grid.Row="19" TextWrapping="Wrap" Text="TextBox"/>
-        <DatePicker Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="9" VerticalAlignment="Stretch"/>
+        <Button x:Name="button" Content="Dodaj" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0.333,0.333,0,66" Grid.Row="22" VerticalAlignment="Stretch" Click="button_Click" Grid.RowSpan="2"/>
+        <Button x:Name="button1" Content="Nazad" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0.333,38.667,66" Grid.Row="22" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" Margin="0,0.333,38.667,9.334" Grid.Row="2" TextWrapping="Wrap" Text="Ime" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="Prezime" Grid.ColumnSpan="2" Margin="0,9.666,38.667,0" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock2" Grid.Column="1" Grid.Row="6" TextWrapping="Wrap" Text="Broj telefona" Grid.ColumnSpan="2" Margin="0,0,38.667,9.667" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="1" Margin="0,0.333,38.667,9.334" Grid.Row="8" TextWrapping="Wrap" Text="Adresa" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock4" Grid.Column="1" Margin="0,9.666,38.667,0.334" Grid.Row="9" TextWrapping="Wrap" Text="Datum rođenja" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock5" Grid.Column="1" Margin="0,9.666,38.667,0" Grid.Row="11" TextWrapping="Wrap" Text="Broj lične karte" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock6" Grid.Column="1" Grid.Row="14" TextWrapping="Wrap" Text="Username" Grid.ColumnSpan="2" Margin="0,0,38.667,0"/>
+        <TextBlock x:Name="textBlock7" Grid.Column="1" Grid.Row="16" TextWrapping="Wrap" Text="Password" Grid.ColumnSpan="2" Margin="0,0,38.667,9.667" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock8" Grid.Column="1" Margin="0,0.333,38.667,9.334" Grid.Row="18" TextWrapping="Wrap" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        	<Run Text="Zan"/>
+        	<Run Text="i"/>
+        	<Run Text="manje"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock9" Grid.Column="1" Margin="0,9.333,38.667,0" Grid.Row="19" TextWrapping="Wrap" Text="Broj vozačke" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox" Grid.Column="3" Margin="0.333,0.333,34,9.334" TextWrapping="Wrap" Text="" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox1" Grid.Column="3" Margin="0.333,9.666,34,0" Grid.Row="3" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox2" Grid.Column="3" Margin="0.333,0,34,9.667" Grid.Row="6" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox3" Grid.Column="3" Margin="0.333,0.333,34,9.334" Grid.Row="8" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox4" Grid.Column="3" Margin="0.333,9.666,34,0" Grid.Row="11" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox5" Grid.Column="3" Margin="0.333,0,34,0" Grid.Row="14" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox7" Grid.Column="3" Margin="0.333,0.333,34,0" Grid.Row="18" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="36" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox8" Grid.Column="3" Margin="0.333,9.333,34,0" Grid.Row="19" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <DatePicker x:Name="datumrodj" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="9" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Margin="0.333,9.666,-136,0.334" Grid.RowSpan="2"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="3" Margin="0.333,0,0,9.667" Grid.Row="16" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock10" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" Text="TextBlock" Visibility="Collapsed" Foreground="#FFF00F0F"/>
+
 
     </Grid>
 </Page>

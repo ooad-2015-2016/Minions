@@ -12,5 +12,6 @@ namespace ProjekatAutomaticCarParkingSystem
         public static List<IzvjestajMajstora> izvjestajiMajstvora = new List<IzvjestajMajstora>();
         public static List<Majstor> majstori = new List<Majstor>();
         public static List<Supervizor> supervizori = new List<Supervizor>();
+        public static List<Korisnik> korisnici = new List<Korisnik>();
     }
 }
