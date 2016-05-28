@@ -9,25 +9,28 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="74*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="122*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="18*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="257*"/>
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Vlasnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,-7.62939453125E-06,-3.814697265625E-06,7.62939453125E-06" Grid.Row="1" VerticalAlignment="Stretch" BorderBrush="#FFFB0E0E" Foreground="#FF0E0A0A" Background="#33DC0606" Click="button_Click" FontSize="32"/>
-        <Button x:Name="button1" Content="Dežurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,7.62939453125E-06,-3.814697265625E-06,-7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3306FF11" BorderBrush="#FF176301" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#339700FF" BorderBrush="#FF4D077E" Click="button2_Click"/>
-        <Button x:Name="button3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="7" VerticalAlignment="Stretch" FontSize="32" Background="#33020DEA" BorderBrush="#FF14035F" Click="button3_Click"/>
+        <Button x:Name="button" Content="Vlasnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="1" VerticalAlignment="Stretch" BorderBrush="#FFFB0E0E" Foreground="#FF0E0A0A" Background="#33DC0606" Click="button_Click" FontSize="32" Grid.ColumnSpan="2"/>
+        <Button x:Name="button1" Content="Dežurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3306FF11" BorderBrush="#FF176301" Click="button1_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button2" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#339700FF" BorderBrush="#FF4D077E" Click="button2_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="7" VerticalAlignment="Stretch" FontSize="32" Background="#33020DEA" BorderBrush="#FF14035F" Click="button3_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="button4" Content="Korisnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="9" VerticalAlignment="Stretch" BorderBrush="#FF171313" FontSize="32" Grid.ColumnSpan="2" Click="button4_Click_1"/>
 
     </Grid>
 </Page>
