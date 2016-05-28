@@ -98,6 +98,9 @@
     <Compile Include="Automobil.cs" />
     <Compile Include="DezurniRadnik.cs" />
     <Compile Include="DolazakNaPosao.cs" />
+    <Compile Include="FormaDezurniRadnik.xaml.cs">
+      <DependentUpon>FormaDezurniRadnik.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormaIzvjestajMajstora.xaml.cs">
       <DependentUpon>FormaIzvjestajMajstora.xaml</DependentUpon>
     </Compile>
@@ -150,6 +153,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FormaDezurniRadnik.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="FormaIzvjestajMajstora.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

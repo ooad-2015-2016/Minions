@@ -20,14 +20,40 @@ namespace ProjekatAutomaticCarParkingSystem
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FormaLogin : Page
+    public sealed partial class FormaDezurniRadnik : Page
     {
-        public FormaLogin()
+        public FormaDezurniRadnik()
         {
             this.InitializeComponent();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaUnosKorisnikavol2)));
+                }
+            }
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaPrijaviKvar)));
+                }
+            }
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
             Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
             if (window != null)

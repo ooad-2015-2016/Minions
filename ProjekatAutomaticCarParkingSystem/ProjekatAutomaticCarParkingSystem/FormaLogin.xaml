@@ -29,7 +29,7 @@
         <TextBlock x:Name="textBlock" Grid.Column="1" Margin="9.5367431640625E-07,0,-9.5367431640625E-07,0" Grid.Row="1" TextWrapping="Wrap" Text="Username"/>
         <TextBlock x:Name="textBlock1" Grid.Column="1" Margin="9.5367431640625E-07,-7.62939453125E-06,2.86102294921875E-06,7.62939453125E-06" Grid.Row="3" TextWrapping="Wrap" Text="Password"/>
         <CheckBox x:Name="checkBox" Grid.ColumnSpan="3" Content="Zaboravili ste password?" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-5,2.86102294921875E-06,0" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <Button x:Name="button" Content="Nazad" Grid.Column="1" HorizontalAlignment="Stretch" Margin="9.5367431640625E-07,7.62939453125E-06,2.86102294921875E-06,-7.62939453125E-06" Grid.Row="7" VerticalAlignment="Stretch"/>
+        <Button x:Name="button" Content="Nazad" Grid.Column="1" HorizontalAlignment="Stretch" Margin="9.5367431640625E-07,7.62939453125E-06,2.86102294921875E-06,-7.62939453125E-06" Grid.Row="7" VerticalAlignment="Stretch" Click="button_Click"/>
         <Button x:Name="button1" Content="Log in" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
         <TextBox x:Name="textBox" Grid.Column="3" Grid.Row="1" TextWrapping="Wrap" Text=""/>
         <TextBox x:Name="textBox1" Grid.Column="3" Grid.Row="3" TextWrapping="Wrap" Text=""/>
