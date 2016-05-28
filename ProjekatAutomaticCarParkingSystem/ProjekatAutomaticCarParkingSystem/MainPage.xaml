@@ -25,9 +25,9 @@
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="button" Content="Vlasnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,-7.62939453125E-06,-3.814697265625E-06,7.62939453125E-06" Grid.Row="1" VerticalAlignment="Stretch" BorderBrush="#FFFB0E0E" Foreground="#FF0E0A0A" Background="#33DC0606" Click="button_Click" FontSize="32"/>
-        <Button x:Name="button1" Content="Dežurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,7.62939453125E-06,-3.814697265625E-06,-7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3306FF11" BorderBrush="#FF176301"/>
-        <Button x:Name="button2" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#339700FF" BorderBrush="#FF4D077E"/>
-        <Button x:Name="button3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="7" VerticalAlignment="Stretch" FontSize="32" Background="#33020DEA" BorderBrush="#FF14035F"/>
+        <Button x:Name="button1" Content="Dežurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,7.62939453125E-06,-3.814697265625E-06,-7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3306FF11" BorderBrush="#FF176301" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#339700FF" BorderBrush="#FF4D077E" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="7" VerticalAlignment="Stretch" FontSize="32" Background="#33020DEA" BorderBrush="#FF14035F" Click="button3_Click"/>
 
     </Grid>
 </Page>

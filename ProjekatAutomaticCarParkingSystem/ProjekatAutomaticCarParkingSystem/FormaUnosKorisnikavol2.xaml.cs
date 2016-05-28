@@ -20,13 +20,13 @@ namespace ProjekatAutomaticCarParkingSystem
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FormaUnosKorisnika : Page
+    public sealed partial class FormaUnosKorisnikavol2 : Page
     {
-        public FormaUnosKorisnika()
+        public FormaUnosKorisnikavol2()
         {
             this.InitializeComponent();
         }
-        //event za klik na dugme dodaj
+//event za klik na dugme dodaj
         private void button_Click(object sender, RoutedEventArgs e)
         { 
             //validacija
@@ -78,6 +78,5 @@ namespace ProjekatAutomaticCarParkingSystem
             KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox5.Text, textBox7.Text, textBox8.Text, passwordBox.Password));
             
         }
-
     }
 }
