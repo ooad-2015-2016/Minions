@@ -98,18 +98,27 @@
     <Compile Include="Automobil.cs" />
     <Compile Include="DezurniRadnik.cs" />
     <Compile Include="DolazakNaPosao.cs" />
+    <Compile Include="FormaIzvjestajMajstora.xaml.cs">
+      <DependentUpon>FormaIzvjestajMajstora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaLogin.xaml.cs">
+      <DependentUpon>FormaLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaPrijaviKvar.xaml.cs">
+      <DependentUpon>FormaPrijaviKvar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaUnosKorisnika.xaml.cs">
+      <DependentUpon>FormaUnosKorisnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaVlasnikIzvjestaji.xaml.cs">
+      <DependentUpon>FormaVlasnikIzvjestaji.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IVozila.cs" />
     <Compile Include="Izvjestaj.cs" />
     <Compile Include="IzvjestajAbstact.cs" />
     <Compile Include="IzvjestajMajstora.cs" />
-    <Compile Include="IzvjestajMajstoraForma.xaml.cs">
-      <DependentUpon>IzvjestajMajstoraForma.xaml</DependentUpon>
-    </Compile>
     <Compile Include="KontejnerskaKlasa.cs" />
     <Compile Include="Korisnik.cs" />
-    <Compile Include="Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -118,9 +127,6 @@
     <Compile Include="Osobe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Supervizor.cs" />
-    <Compile Include="UnosKorisnika.xaml.cs">
-      <DependentUpon>UnosKorisnika.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Vlasnik.cs" />
     <Compile Include="Vozilo.cs" />
   </ItemGroup>
@@ -144,19 +150,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="IzvjestajMajstoraForma.xaml">
+    <Page Include="FormaIzvjestajMajstora.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Login.xaml">
+    <Page Include="FormaLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaPrijaviKvar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaUnosKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaVlasnikIzvjestaji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UnosKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

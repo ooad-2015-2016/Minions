@@ -7,53 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-320,-298,-488,-335">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="43*"/>
-            <RowDefinition Height="54*"/>
-            <RowDefinition Height="72*"/>
-            <RowDefinition Height="267*"/>
-            <RowDefinition Height="267*"/>
-            <RowDefinition Height="273*"/>
-            <RowDefinition Height="285*"/>
-            <RowDefinition Height="180*"/>
-            <RowDefinition Height="69*"/>
-            <RowDefinition Height="111*"/>
-            <RowDefinition Height="92*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="74*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="195*"/>
-            <ColumnDefinition Width="243*"/>
-            <ColumnDefinition Width="42*"/>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="42*"/>
-            <ColumnDefinition Width="60*"/>
-            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
-        <GridView x:Name="gridView" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Width="100" Height="10"/>
-        <GridView x:Name="gridView1" Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="483,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="3"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Da" VerticalAlignment="Top" Height="78" RenderTransformOrigin="0.5,0.5" Width="314" Grid.Row="2" Grid.RowSpan="2">
-            <TextBlock.RenderTransform>
-                <CompositeTransform ScaleY="-1"/>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Datum" VerticalAlignment="Top" Height="71" Width="760" FontSize="32" TextAlignment="Right" Grid.RowSpan="2" Grid.Row="1"/>
-        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Margin="0,1,0,-17" VerticalAlignment="Top" FontSize="29.333" Height="70" Width="524" Grid.Row="1"/>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Ime i prezime ovlaštenog lica" VerticalAlignment="Top" Height="71" Width="760" FontSize="32" TextAlignment="Right" Grid.Row="2"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="76" Margin="10,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="468" FontSize="29.333" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Opis kvara" VerticalAlignment="Top" Height="71" Width="760" FontSize="32" TextAlignment="Right" Grid.Row="3" SelectionChanged="textBlock1_Copy1_SelectionChanged"/>
-        <TextBox x:Name="textBox_Copy" Grid.Column="1" HorizontalAlignment="Left" Height="272" Margin="10,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1624" FontSize="29.333" Grid.RowSpan="2" Grid.ColumnSpan="6"/>
-        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="20,0,0,0" TextWrapping="Wrap" Text="Iskorišteni materijal" VerticalAlignment="Top" Height="71" Width="750" FontSize="32" TextAlignment="Right" Grid.Row="4" SelectionChanged="textBlock1_Copy1_SelectionChanged"/>
-        <TextBox x:Name="textBox_Copy1" Grid.Column="1" HorizontalAlignment="Left" Height="272" Margin="10,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1624" FontSize="29.333" TextChanged="textBox_Copy1_TextChanged" Grid.RowSpan="2" Grid.ColumnSpan="6"/>
-        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="20,0,0,0" TextWrapping="Wrap" Text="Opis popravka" VerticalAlignment="Top" Height="71" Width="750" FontSize="32" TextAlignment="Right" Grid.Row="5" SelectionChanged="textBlock1_Copy1_SelectionChanged"/>
-        <TextBox x:Name="textBox_Copy2" Grid.Column="1" HorizontalAlignment="Left" Height="272" Margin="10,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1624" FontSize="29.333" TextChanged="textBox_Copy1_TextChanged" Grid.ColumnSpan="6"/>
-        <TextBlock x:Name="textBlock1_Copy4" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Uputstvo za daljnje rukovanje" VerticalAlignment="Top" Height="71" Width="750" FontSize="32" TextAlignment="Right" Grid.Row="6" SelectionChanged="textBlock1_Copy1_SelectionChanged"/>
-        <TextBox x:Name="textBox_Copy3" Grid.Column="1" HorizontalAlignment="Left" Height="272" Margin="10,5,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1624" FontSize="29.333" TextChanged="textBox_Copy1_TextChanged" Grid.ColumnSpan="6"/>
-        <CheckBox x:Name="checkBox" Content="Kvar otklonjen" Grid.Column="1" HorizontalAlignment="Left" Height="44" Margin="914,0,0,0" VerticalAlignment="Top" Width="411" FontSize="29.333" Checked="checkBox_Checked" Grid.Row="1" Grid.ColumnSpan="4"/>
-        <TextBlock x:Name="textBlock1_Copy5" HorizontalAlignment="Left" Margin="20,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="750" FontSize="64" TextAlignment="Right" Grid.Row="7" SelectionChanged="textBlock1_Copy1_SelectionChanged" Text="Ukupno"/>
-        <TextBox x:Name="textBox1" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="29.333" Height="160" Width="1608" Grid.ColumnSpan="5"/>
-        <Button x:Name="button" Content="Natrag" Grid.Column="2" HorizontalAlignment="Left" Margin="5,10,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="29.333" Click="button_Click" Height="91" Width="164" Grid.ColumnSpan="2"/>
-        <Button x:Name="button_Copy" Content="Predaj" Grid.Column="4" HorizontalAlignment="Left" Margin="3,10,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="29.333" Click="button_Click" Height="91" Width="165"/>
+        <Button x:Name="button" Content="Vlasnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,-7.62939453125E-06,-3.814697265625E-06,7.62939453125E-06" Grid.Row="1" VerticalAlignment="Stretch" BorderBrush="#FFFB0E0E" Foreground="#FF0E0A0A" Background="#33DC0606" Click="button_Click" FontSize="32"/>
+        <Button x:Name="button1" Content="Dežurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,7.62939453125E-06,-3.814697265625E-06,-7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3306FF11" BorderBrush="#FF176301"/>
+        <Button x:Name="button2" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#339700FF" BorderBrush="#FF4D077E"/>
+        <Button x:Name="button3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="3.814697265625E-06,0,-3.814697265625E-06,0" Grid.Row="7" VerticalAlignment="Stretch" FontSize="32" Background="#33020DEA" BorderBrush="#FF14035F"/>
 
     </Grid>
 </Page>

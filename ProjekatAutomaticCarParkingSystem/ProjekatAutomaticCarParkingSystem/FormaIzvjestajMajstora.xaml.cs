@@ -20,16 +20,11 @@ namespace ProjekatAutomaticCarParkingSystem
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class FormaIzvjestajMajstora : Page
     {
-        public MainPage()
+        public FormaIzvjestajMajstora()
         {
             this.InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -8,6 +8,6 @@ namespace ProjekatAutomaticCarParkingSystem
 {
     interface Izvjestaj
     {
-        public DateTime VrijemeIzvjestaja { get; set; }
+       DateTime VrijemeIzvjestaja { get; set; }
     }
 }

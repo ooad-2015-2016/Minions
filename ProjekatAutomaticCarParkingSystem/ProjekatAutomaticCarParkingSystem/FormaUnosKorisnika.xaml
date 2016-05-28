@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="ProjekatAutomaticCarParkingSystem.FormaUnosKorisnika"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatAutomaticCarParkingSystem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="36*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Dodaj" Grid.Column="3" HorizontalAlignment="Stretch" Margin="7.62939453125E-06,-7.62939453125E-06,-7.62939453125E-06,7.62939453125E-06" Grid.Row="21" VerticalAlignment="Stretch"/>
+        <Button x:Name="button1" Content="Nazad" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="21" VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" Margin="0,0,0,-3.814697265625E-06" Grid.Row="1" TextWrapping="Wrap" Text="Ime"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" Text="Prezime"/>
+        <TextBlock x:Name="textBlock2" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="Broj telefona"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="7" TextWrapping="Wrap" Text="Adresa"/>
+        <TextBlock x:Name="textBlock4" Grid.Column="1" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="9" TextWrapping="Wrap" Text="Datum rođenja"/>
+        <TextBlock x:Name="textBlock5" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="11" TextWrapping="Wrap" Text="Broj lične karte"/>
+        <TextBlock x:Name="textBlock6" Grid.Column="1" Grid.Row="13" TextWrapping="Wrap" Text="Username"/>
+        <TextBlock x:Name="textBlock7" Grid.Column="1" Grid.Row="15" TextWrapping="Wrap" Text="Password"/>
+        <TextBlock x:Name="textBlock8" Grid.Column="1" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="17" TextWrapping="Wrap" Text="Zanmanje"/>
+        <TextBlock x:Name="textBlock9" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="19" TextWrapping="Wrap" Text="Broj vozačke"/>
+        <TextBox x:Name="textBox" Grid.Column="3" Margin="7.62939453125E-06,-2.38418579101563E-07,-7.62939453125E-06,-3.57627868652344E-06" TextWrapping="Wrap" Text="TextBox" Grid.Row="1"/>
+        <TextBox x:Name="textBox1" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox2" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="5" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox3" Grid.Column="3" Margin="7.62939453125E-06,7.39097595214844E-06,-7.62939453125E-06,-7.39097595214844E-06" Grid.Row="7" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox4" Grid.Column="3" Margin="7.62939453125E-06,7.62939453125E-06,-7.62939453125E-06,-7.62939453125E-06" Grid.Row="11" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox5" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="13" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox6" Grid.Column="3" Margin="7.62939453125E-06,0,-7.62939453125E-06,0" Grid.Row="15" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox7" Grid.Column="3" Margin="7.62939453125E-06,-7.86781311035156E-06,-7.62939453125E-06,7.86781311035156E-06" Grid.Row="17" TextWrapping="Wrap" Text="TextBox"/>
+        <TextBox x:Name="textBox8" Grid.Column="3" Margin="7.62939453125E-06,7.62939453125E-06,-7.62939453125E-06,-7.62939453125E-06" Grid.Row="19" TextWrapping="Wrap" Text="TextBox"/>
+        <DatePicker Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="9" VerticalAlignment="Stretch"/>
+
+    </Grid>
+</Page>
