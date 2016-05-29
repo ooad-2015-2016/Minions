@@ -129,6 +129,7 @@
     <Compile Include="Osoba.cs" />
     <Compile Include="Osobe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rfid.cs" />
     <Compile Include="Supervizor.cs" />
     <Compile Include="Vlasnik.cs" />
     <Compile Include="Vozilo.cs" />

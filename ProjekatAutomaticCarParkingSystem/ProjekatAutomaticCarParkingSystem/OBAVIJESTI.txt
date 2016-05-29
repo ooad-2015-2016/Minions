@@ -4,4 +4,6 @@ otvara uvezati sa njima,
 i onda tu formu pokrenuti iz logina kada se korisnik loguje, imate komentar gdje se treba dodati tacno
 
 - treba napraviti klasu uplate i dodati u kontejnersku da bi vlasnik imao sta da gleda 
-- 
+!!!!!!!!!!! treba napraviti formu za supervizora da moze birati da li ce da gleda kada su mu
+dezurni radnici dosli ili da bira da doda dezurnog radnika, ovo prvo napravit da ja mogu implementirati 
+RFID i treba dodati  u klasu dezurni radnik atribut string RFID i getter i setter 
