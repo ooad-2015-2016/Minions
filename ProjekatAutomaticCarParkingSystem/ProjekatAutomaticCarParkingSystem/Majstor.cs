@@ -17,6 +17,7 @@ namespace ProjekatAutomaticCarParkingSystem
         public override String Adresa { get { return adresa; } set { adresa = value; } }
         public override DateTime DatumRodjenja { get { return datumRodjenja; } set { datumRodjenja = value; } }
         public override String BrojLicneKarte { get { return brojLicneKarte; } set { brojLicneKarte = value; } }
+        public string Password { get { return pasword; } }
         public Majstor()
         {
                 

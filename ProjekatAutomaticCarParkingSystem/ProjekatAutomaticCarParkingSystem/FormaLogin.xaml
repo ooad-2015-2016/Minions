@@ -9,15 +9,18 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="74*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="74*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>
@@ -26,13 +29,20 @@
             <ColumnDefinition Width="158*"/>
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" Grid.Column="1" Margin="9.5367431640625E-07,0,-9.5367431640625E-07,0" Grid.Row="1" TextWrapping="Wrap" Text="Username"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="1" Margin="9.5367431640625E-07,-7.62939453125E-06,2.86102294921875E-06,7.62939453125E-06" Grid.Row="3" TextWrapping="Wrap" Text="Password"/>
-        <CheckBox x:Name="checkBox" Grid.ColumnSpan="3" Content="Zaboravili ste password?" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-5,2.86102294921875E-06,0" Grid.Row="5" VerticalAlignment="Stretch"/>
-        <Button x:Name="button" Content="Nazad" Grid.Column="1" HorizontalAlignment="Stretch" Margin="9.5367431640625E-07,7.62939453125E-06,2.86102294921875E-06,-7.62939453125E-06" Grid.Row="7" VerticalAlignment="Stretch" Click="button_Click"/>
-        <Button x:Name="button1" Content="Log in" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch"/>
-        <TextBox x:Name="textBox" Grid.Column="3" Grid.Row="1" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox1" Grid.Column="3" Grid.Row="3" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock" Margin="13,20,0,0" TextWrapping="Wrap" Text="Username" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock1" Margin="13,0,0,41.333" Grid.Row="2" TextWrapping="Wrap" Text="Password" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <CheckBox x:Name="checkBox" Grid.ColumnSpan="4" Content="Zaboravili ste password?" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,-4.667,13,41" Grid.Row="3" VerticalAlignment="Stretch" Grid.RowSpan="2"/>
+        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Stretch" Margin="13,0,0,20" Grid.Row="10" VerticalAlignment="Stretch" Click="button_Click" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Button x:Name="button1" Content="Log in" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Margin="0,0,13,20" Click="button1_Click" Grid.RowSpan="2"/>
+        <RadioButton x:Name="radioButton" Grid.ColumnSpan="4" Content="Vlasnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,35.333,13,0" Grid.Row="3" VerticalAlignment="Stretch" Grid.RowSpan="2"/>
+        <RadioButton x:Name="radioButton1" Grid.ColumnSpan="4" Content="Korisnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,-6,13,0" Grid.Row="5" VerticalAlignment="Stretch"/>
+        <RadioButton x:Name="radioButton2" Grid.ColumnSpan="4" Content="Dezurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,36,13,41.667" Grid.Row="5" VerticalAlignment="Stretch" Grid.RowSpan="3"/>
+        <RadioButton x:Name="radioButton3" Grid.ColumnSpan="4" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,36,13,39.91" Grid.Row="6" VerticalAlignment="Stretch" Grid.RowSpan="3"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="3" Grid.Row="2" Margin="0,0,13,41.333" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock2" Grid.ColumnSpan="5" Margin="13,0.333,13,90.666" Grid.Row="8" TextWrapping="Wrap" Text="" Foreground="Red" FontSize="32" TextAlignment="Center" Grid.RowSpan="3"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="3" Margin="0,20,13,0" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox" Grid.Column="3" Margin="0,20,13,0" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <RadioButton x:Name="radioButton4" Grid.ColumnSpan="3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-6,2.86102294921875E-06,0" Grid.Row="8" VerticalAlignment="Stretch"/>
 
     </Grid>
 </Page>

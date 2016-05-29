@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ProjekatAutomaticCarParkingSystem
@@ -38,6 +39,72 @@ namespace ProjekatAutomaticCarParkingSystem
                     frame.Navigate((typeof(MainPage)));
                 }
             }
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            //provjerava validnost podataka ako vlasnik nije zaboravio pasword
+            if (checkBox.IsChecked != true && radioButton.IsChecked == true)
+            {
+              if(textBox.Text != "jasamglavni")
+                {
+                    textBlock2.Text = "Pogresno korisnicko ime!!!";
+                  
+                }
+              else if(passwordBox.Password != "1234")
+                { textBlock2.Text = "Pogresan password!!!"; }
+              else
+                {
+                    //ako sve okej prodje, otvara se forma za vlasnika
+                    Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                    if (window != null)
+                    {
+                        Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                        if (frame != null)
+                        {
+                            frame.Navigate((typeof(FormaVlasnikIzvjestaji)));
+                        }
+                    }
+                }
+            }
+            //provjerava validnost podataka ako se loguje korisnik i nije zaboravio pass
+            //treba napraviti formu koja ce se prikazati korisniku
+            if(checkBox.IsChecked != true && radioButton1.IsChecked == true)
+            {
+                foreach (Korisnik korisnik in KontejnerskaKlasa.korisnici)
+                {
+                    if (korisnik.Username == textBox.Text && korisnik.Password == passwordBox.Password )
+                    {
+                        //ovdje treba napraviti da se otvara forma za korisnika 
+                    }
+        
+                }
+                //ako se ne nadje ni jedan korisnik sa usernameom i pw znaci da je pogrijesio
+                textBlock2.Text = "Pogresan username ili password!!!";
+            }
+            if (checkBox.IsChecked != true && radioButton4.IsChecked == true)
+            {
+                foreach (Majstor majstor in KontejnerskaKlasa.majstori)
+                {
+                    if (majstor.Username == textBox.Text && majstor.Password == passwordBox.Password)
+                    {
+                        Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                        if (window != null)
+                        {
+                            Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                            if (frame != null)
+                            {
+                                frame.Navigate((typeof(FormaIzvjestajMajstora)));
+                            }
+                        }
+                    }
+
+                }
+                //ako se ne nadje ni jedan majstor sa usernameom i pw znaci da je pogrijesio
+                textBlock2.Text = "Pogresan username ili password!!!";
+            }
+            //treba dodati za dezurnog radnika i supervizora
+
         }
     }
 }
