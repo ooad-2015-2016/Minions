@@ -109,7 +109,12 @@ namespace ProjekatAutomaticCarParkingSystem
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            KontejnerskaKlasa.DodavnjeClanovaListe();
+          
+        }
+
+        private void Grid_GotFocus(object sender, RoutedEventArgs e)
+        {
+         
         }
     }
 }

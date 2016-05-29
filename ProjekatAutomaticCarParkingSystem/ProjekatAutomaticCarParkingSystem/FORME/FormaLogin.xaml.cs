@@ -27,7 +27,7 @@ namespace ProjekatAutomaticCarParkingSystem
         {
             this.InitializeComponent();
         }
-
+        //vracamo se na proslu dugme natrag
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
@@ -71,19 +71,23 @@ namespace ProjekatAutomaticCarParkingSystem
             //treba napraviti formu koja ce se prikazati korisniku
             if (checkBox.IsChecked != true && radioButton1.IsChecked == true)
             {
+                bool nadjen = false;
                 foreach (Korisnik korisnik in KontejnerskaKlasa.korisnici)
                 {
                     if (korisnik.Username == textBox.Text && korisnik.Password == passwordBox.Password)
                     {
+                        nadjen = true;
+
                         //ovdje treba napraviti da se otvara forma za korisnika 
                     }
 
                 }
                 //ako se ne nadje ni jedan korisnik sa usernameom i pw znaci da je pogrijesio
-                textBlock2.Text = "Pogresan username ili password!!!";
+                if (!nadjen) { textBlock2.Text = "Pogresan username ili password!!!"; }
             }
             if (checkBox.IsChecked != true && radioButton4.IsChecked == true)
             {
+                bool nadjen = false;
                 foreach (Majstor majstor in KontejnerskaKlasa.majstori)
                 {
                     if (majstor.Username == textBox.Text && majstor.Password == passwordBox.Password)
@@ -101,31 +105,31 @@ namespace ProjekatAutomaticCarParkingSystem
 
                 }
                 //ako se ne nadje ni jedan majstor sa usernameom i pw znaci da je pogrijesio
-                textBlock2.Text = "Pogresan username ili password!!!";
+                if(!nadjen) textBlock2.Text = "Pogresan username ili password!!!";
             }
             //treba dodati za dezurnog radnika i supervizora
             if (checkBox.IsChecked != true && radioButton2.IsChecked == true)
             {
-                if (textBox.Text != "mirza95")
+                bool nadjen = false;
+                foreach (DezurniRadnik radnik in KontejnerskaKlasa.dezurniRadnici)
                 {
-                    textBlock2.Text = "Pogresno korisnicko ime!!!";
-
-                }
-                else if (passwordBox.Password != "123456")
-                { textBlock2.Text = "Pogresan password!!!"; }
-                else
-                {
-                    //ako sve okej prodje, otvara se forma za dezurnog radnika
-                    Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-                    if (window != null)
+                    if (radnik.Username == textBox.Text && radnik.Password == passwordBox.Password)
                     {
-                        Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                        if (frame != null)
+                        Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                        if (window != null)
                         {
-                            frame.Navigate((typeof(FormaDezurniRadnik)));
+                            Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                            if (frame != null)
+                            {
+                                frame.Navigate((typeof(FormaDezurniRadnik)));
+                            }
                         }
                     }
+
                 }
+                //ako se ne nadje ni jedan majstor sa usernameom i pw znaci da je pogrijesio
+                if (!nadjen) textBlock2.Text = "Pogresan username ili password!!!";
+                
             }
 
             //Login za supervizora
@@ -152,29 +156,27 @@ namespace ProjekatAutomaticCarParkingSystem
                     }
                 }
             }
-            //Forma za majstora
+            //Forma za dez radnika
             if (checkBox.IsChecked != true && radioButton4.IsChecked == true)
             {
-                if (textBox.Text != "sedin95")
+                bool nadjen = false;
+                foreach (DezurniRadnik radnik in KontejnerskaKlasa.dezurniRadnici)
                 {
-                    textBlock2.Text = "Pogresno korisnicko ime!!!";
-
-                }
-                else if (passwordBox.Password != "1234")
-                { textBlock2.Text = "Pogresan password!!!"; }
-                else
-                {
-                    //ako sve okej prodje, otvara se forma za supervizora
-                    Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-                    if (window != null)
+                    if (radnik.Username == textBox.Text && radnik.Password == passwordBox.Password)
                     {
-                        Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                        if (frame != null)
+                        Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                        if (window != null)
                         {
-                            frame.Navigate((typeof(FormaIzvjestajMajstora)));
+                            Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                            if (frame != null)
+                            {
+                                frame.Navigate((typeof(FormaDezurniRadnik)));
+                            }
                         }
                     }
+
                 }
+                
             }
         }
 
