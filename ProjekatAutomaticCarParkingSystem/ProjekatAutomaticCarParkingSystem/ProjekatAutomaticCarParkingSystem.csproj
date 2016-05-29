@@ -95,8 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FORME\FormaDodajRadnika.xaml.cs">
-      <DependentUpon>FormaDodajRadnika.xaml</DependentUpon>
+    <Compile Include="FORME\FormaKorisnik.xaml.cs">
+      <DependentUpon>FormaKorisnik.xaml</DependentUpon>
     </Compile>
     <Compile Include="KLASE\Automobil.cs" />
     <Compile Include="KLASE\DezurniRadnik.cs" />
@@ -164,13 +164,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="FORME\FormaDezurniRadnik.xaml">
+    <Page Include="FORME\FormaKorisnik.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="FORME\FormaDodajRadnika.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="FORME\FormaDezurniRadnik.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="FORME\FormaIzvjestajMajstora.xaml">
       <SubType>Designer</SubType>

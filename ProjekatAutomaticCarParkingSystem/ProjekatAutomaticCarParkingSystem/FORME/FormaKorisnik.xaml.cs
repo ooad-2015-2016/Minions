@@ -20,43 +20,59 @@ namespace ProjekatAutomaticCarParkingSystem
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FormaSupervizor : Page
+    public sealed partial class FormaKorisnik : Page
     {
-        public FormaSupervizor()
+        public FormaKorisnik()
         {
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(MainPage)));
+                }
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaUnosDezurnogRadnika)));
-                }
-            }
+
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void radioButton2_Checked(object sender, RoutedEventArgs e)
         {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaLogin)));
-                }
-            }
+
         }
 
+        private void radioButton1_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButton3_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

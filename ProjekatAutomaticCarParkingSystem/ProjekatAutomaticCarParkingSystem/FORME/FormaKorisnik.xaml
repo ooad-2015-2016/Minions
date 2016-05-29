@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="ProjekatAutomaticCarParkingSystem.FormaKorisnik"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatAutomaticCarParkingSystem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="158*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="158*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" Margin="13,20,0,0" TextWrapping="Wrap" Text="Kreditna kartica" Grid.ColumnSpan="2" Grid.RowSpan="2" SelectionChanged="textBlock_SelectionChanged"/>
+        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Stretch" Margin="13,0,0,20" Grid.Row="10" VerticalAlignment="Stretch" Click="button_Click" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Button x:Name="button1" Content="Uplati" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Margin="0,0,13,20" Click="button1_Click" Grid.RowSpan="2"/>
+        <RadioButton x:Name="radioButton" Grid.ColumnSpan="4" Content="Uplata za sat" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,35.333,13,0" Grid.Row="3" VerticalAlignment="Stretch" Grid.RowSpan="2" Checked="radioButton_Checked"/>
+        <RadioButton x:Name="radioButton1" Grid.ColumnSpan="4" Content="Uplata za dan" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,-6,13,0" Grid.Row="5" VerticalAlignment="Stretch" Checked="radioButton1_Checked"/>
+        <RadioButton x:Name="radioButton2" Grid.ColumnSpan="4" Content="Uplata za mjesec" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,36,13,41.667" Grid.Row="5" VerticalAlignment="Stretch" Grid.RowSpan="3" Checked="radioButton2_Checked"/>
+        <RadioButton x:Name="radioButton3" Grid.ColumnSpan="4" Content="Uplata za godinu" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,36,13,39.91" Grid.Row="6" VerticalAlignment="Stretch" Grid.RowSpan="3" Checked="radioButton3_Checked"/>
+        <TextBlock x:Name="textBlock2" Grid.ColumnSpan="5" Margin="13,0.333,13,90.666" Grid.Row="8" TextWrapping="Wrap" Text="" Foreground="Red" FontSize="32" TextAlignment="Center" Grid.RowSpan="3"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="3" Margin="0,20,13,0" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox" Grid.Column="3" Margin="0,20,13,0" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2" TextChanged="textBox_TextChanged"/>
+
+    </Grid>
+</Page>

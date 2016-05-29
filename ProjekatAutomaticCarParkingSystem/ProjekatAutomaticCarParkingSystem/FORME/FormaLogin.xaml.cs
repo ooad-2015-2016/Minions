@@ -43,20 +43,20 @@ namespace ProjekatAutomaticCarParkingSystem
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (checkBox.IsChecked == true) textBlock2.Text = "Javite se vlasniku"; return;
+            if (checkBox.IsChecked ==true)
+            {
+                textBlock2.Text = "Javite se vlasniku";
+            }
             //provjerava validnost podataka ako vlasnik nije zaboravio pasword
             if (checkBox.IsChecked != true && radioButton.IsChecked == true)
             {
-                textBlock2.Text = "";
                 if (textBox.Text != "jasamglavni")
                 {
-                    textBlock2.Text = "Pogresno korisnicko ime!!!"; 
+                    textBlock2.Text = "Pogresno korisnicko ime!!!";
 
                 }
                 else if (passwordBox.Password != "1234")
-                {
-                    textBlock2.Text = "Pogresan password!!!";
-                }
+                { textBlock2.Text = "Pogresan password!!!"; }
                 else
                 {
                     //ako sve okej prodje, otvara se forma za vlasnika
@@ -75,7 +75,6 @@ namespace ProjekatAutomaticCarParkingSystem
             //treba napraviti formu koja ce se prikazati korisniku
             if (checkBox.IsChecked != true && radioButton1.IsChecked == true)
             {
-                textBlock2.Text = "";
                 bool nadjen = false;
                 foreach (Korisnik korisnik in KontejnerskaKlasa.korisnici)
                 {
@@ -83,16 +82,24 @@ namespace ProjekatAutomaticCarParkingSystem
                     {
                         nadjen = true;
 
-                        //ovdje treba napraviti da se otvara forma za korisnika 
+                        Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                        if (window != null)
+                        {
+                            Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                            if (frame != null)
+                            {
+                                frame.Navigate((typeof(FormaKorisnik)));
+                            }
+                        }
                     }
+
                 }
                 //ako se ne nadje ni jedan korisnik sa usernameom i pw znaci da je pogrijesio
                 if (!nadjen) { textBlock2.Text = "Pogresan username ili password!!!"; }
             }
-            //majstori
+            //Login za majstora
             if (checkBox.IsChecked != true && radioButton4.IsChecked == true)
             {
-                textBlock2.Text = "";
                 bool nadjen = false;
                 foreach (Majstor majstor in KontejnerskaKlasa.majstori)
                 {
@@ -108,14 +115,14 @@ namespace ProjekatAutomaticCarParkingSystem
                             }
                         }
                     }
+
                 }
                 //ako se ne nadje ni jedan majstor sa usernameom i pw znaci da je pogrijesio
                 if(!nadjen) textBlock2.Text = "Pogresan username ili password!!!";
             }
-            //treba dodati za dezurnog radnika i supervizora
+            
             if (checkBox.IsChecked != true && radioButton2.IsChecked == true)
             {
-                textBlock2.Text = "";
                 bool nadjen = false;
                 foreach (DezurniRadnik radnik in KontejnerskaKlasa.dezurniRadnici)
                 {
@@ -133,7 +140,7 @@ namespace ProjekatAutomaticCarParkingSystem
                     }
 
                 }
-                //ako se ne nadje ni jedan dez radnik sa usernameom i pw znaci da je pogrijesio
+                //ako se ne nadje ni jedan majstor sa usernameom i pw znaci da je pogrijesio
                 if (!nadjen) textBlock2.Text = "Pogresan username ili password!!!";
                 
             }
