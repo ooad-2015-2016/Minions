@@ -8,10 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="112" Margin="62,128,0,0" VerticalAlignment="Top" Width="234" RenderTransformOrigin="0.46,0.52"/>
-        <Button x:Name="button" Content="Dodaj korisnika" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="89" Width="340" Click="button_Click" Margin="10,17.667,0,0" Grid.RowSpan="2"/>
-        <Button x:Name="button1" Content="Prijavi kvar" HorizontalAlignment="Left" Margin="10,8,0,0" Grid.Row="3" VerticalAlignment="Top" Height="88" Width="340" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Nazad" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="340" Height="87" Click="button2_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="36*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Height="112" Margin="26,21.667,0,0" VerticalAlignment="Top" Width="234" RenderTransformOrigin="0.46,0.52" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+        <Button x:Name="button" Content="Dodaj korisnika" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="button_Click" Margin="-3.814697265625E-06,0,1.9073486328125E-05,0" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="button1" Content="Prijavi kvar" HorizontalAlignment="Stretch" Margin="-3.814697265625E-06,0,1.9073486328125E-05,0" Grid.Row="3" VerticalAlignment="Stretch" Click="button1_Click" Grid.Column="1"/>
+        <Button x:Name="button2" Content="Nazad" HorizontalAlignment="Stretch" Margin="3.29623031616211,-0.531976699829102,-2.82682418823242,2.3061466217041" Grid.Row="5" VerticalAlignment="Stretch" Click="button2_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Column="1">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.433"/>
+            </Button.RenderTransform>
+        </Button>
         <Grid.RowDefinitions>
             <RowDefinition Height="74*"/>
             <RowDefinition Height="74*"/>
