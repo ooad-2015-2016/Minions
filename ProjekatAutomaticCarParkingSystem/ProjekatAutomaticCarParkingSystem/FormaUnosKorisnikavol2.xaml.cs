@@ -78,5 +78,18 @@ namespace ProjekatAutomaticCarParkingSystem
             KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox5.Text, textBox7.Text, textBox8.Text, passwordBox.Password));
             
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaDezurniRadnik)));
+                }
+            }
+        }
     }
 }

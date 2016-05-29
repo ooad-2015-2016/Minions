@@ -22,8 +22,7 @@ namespace ProjekatAutomaticCarParkingSystem
         {
 
         }
-        public DezurniRadnik(String _ime, String _prezime, String _brojtelefona, String _adresa, String _brojlicne, DateTime _datumrodjenja, String _brojVozacke, String _zanimanje, String _username, String _pasword)
-            :base(_ime,_prezime,_brojtelefona,_adresa,_brojlicne,_datumrodjenja)
+        public DezurniRadnik(String _ime, String _prezime, String _brojtelefona, String _adresa, String _brojlicne, DateTime _datumrodjenja, String _brojVozacke, String _zanimanje, String _username, String _pasword):base(_ime,_prezime,_brojtelefona,_adresa,_brojlicne,_datumrodjenja)
         {
             
             username = _username;

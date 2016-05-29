@@ -29,6 +29,7 @@ namespace ProjekatAutomaticCarParkingSystem
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            //dodaj korisnika button
             Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
             if (window != null)
             {

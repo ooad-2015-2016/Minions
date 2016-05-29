@@ -46,14 +46,14 @@ namespace ProjekatAutomaticCarParkingSystem
             //provjerava validnost podataka ako vlasnik nije zaboravio pasword
             if (checkBox.IsChecked != true && radioButton.IsChecked == true)
             {
-              if(textBox.Text != "jasamglavni")
+                if (textBox.Text != "jasamglavni")
                 {
                     textBlock2.Text = "Pogresno korisnicko ime!!!";
-                  
+
                 }
-              else if(passwordBox.Password != "1234")
+                else if (passwordBox.Password != "1234")
                 { textBlock2.Text = "Pogresan password!!!"; }
-              else
+                else
                 {
                     //ako sve okej prodje, otvara se forma za vlasnika
                     Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
@@ -69,15 +69,15 @@ namespace ProjekatAutomaticCarParkingSystem
             }
             //provjerava validnost podataka ako se loguje korisnik i nije zaboravio pass
             //treba napraviti formu koja ce se prikazati korisniku
-            if(checkBox.IsChecked != true && radioButton1.IsChecked == true)
+            if (checkBox.IsChecked != true && radioButton1.IsChecked == true)
             {
                 foreach (Korisnik korisnik in KontejnerskaKlasa.korisnici)
                 {
-                    if (korisnik.Username == textBox.Text && korisnik.Password == passwordBox.Password )
+                    if (korisnik.Username == textBox.Text && korisnik.Password == passwordBox.Password)
                     {
                         //ovdje treba napraviti da se otvara forma za korisnika 
                     }
-        
+
                 }
                 //ako se ne nadje ni jedan korisnik sa usernameom i pw znaci da je pogrijesio
                 textBlock2.Text = "Pogresan username ili password!!!";
@@ -104,6 +104,68 @@ namespace ProjekatAutomaticCarParkingSystem
                 textBlock2.Text = "Pogresan username ili password!!!";
             }
             //treba dodati za dezurnog radnika i supervizora
+            if (checkBox.IsChecked != true && radioButton2.IsChecked == true)
+            {
+                if (textBox.Text != "mirza95")
+                {
+                    textBlock2.Text = "Pogresno korisnicko ime!!!";
+
+                }
+                else if (passwordBox.Password != "123456")
+                { textBlock2.Text = "Pogresan password!!!"; }
+                else
+                {
+                    //ako sve okej prodje, otvara se forma za dezurnog radnika
+                    Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                    if (window != null)
+                    {
+                        Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                        if (frame != null)
+                        {
+                            frame.Navigate((typeof(FormaDezurniRadnik)));
+                        }
+                    }
+                }
+            }
+
+            //Login za supervizora
+            if (checkBox.IsChecked != true && radioButton3.IsChecked == true)
+            {
+                if (textBox.Text != "merima")
+                {
+                    textBlock2.Text = "Pogresno korisnicko ime!!!";
+
+                }
+                else if (passwordBox.Password != "1234")
+                { textBlock2.Text = "Pogresan password!!!"; }
+                else
+                {
+                    //ako sve okej prodje, otvara se forma za supervizora
+                    Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                    if (window != null)
+                    {
+                        Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                        if (frame != null)
+                        {
+                            frame.Navigate((typeof(FormaSupervizor)));
+                        }
+                    }
+                }
+            }
+        }
+
+        private void radioButton2_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void radioButton3_Checked(object sender, RoutedEventArgs e)
+        {
 
         }
     }

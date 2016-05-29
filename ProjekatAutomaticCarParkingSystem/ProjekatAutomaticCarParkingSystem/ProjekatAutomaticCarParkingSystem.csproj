@@ -110,6 +110,12 @@
     <Compile Include="FormaPrijaviKvar.xaml.cs">
       <DependentUpon>FormaPrijaviKvar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormaSupervizor.xaml.cs">
+      <DependentUpon>FormaSupervizor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaUnosDezurnogRadnika.xaml.cs">
+      <DependentUpon>FormaUnosDezurnogRadnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormaUnosKorisnikavol2.xaml.cs">
       <DependentUpon>FormaUnosKorisnikavol2.xaml</DependentUpon>
     </Compile>
@@ -168,6 +174,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FormaPrijaviKvar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaSupervizor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaUnosDezurnogRadnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

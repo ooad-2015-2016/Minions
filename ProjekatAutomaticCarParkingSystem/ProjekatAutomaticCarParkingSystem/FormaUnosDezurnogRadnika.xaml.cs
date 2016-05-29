@@ -20,9 +20,9 @@ namespace ProjekatAutomaticCarParkingSystem
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class FormaPrijaviKvar : Page
+    public sealed partial class FormaUnosDezurnogRadnika : Page
     {
-        public FormaPrijaviKvar()
+        public FormaUnosDezurnogRadnika()
         {
             this.InitializeComponent();
         }
@@ -35,9 +35,14 @@ namespace ProjekatAutomaticCarParkingSystem
                 Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
                 if (frame != null)
                 {
-                    frame.Navigate((typeof(FormaDezurniRadnik)));
+                    frame.Navigate((typeof(FormaSupervizor)));
                 }
             }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
