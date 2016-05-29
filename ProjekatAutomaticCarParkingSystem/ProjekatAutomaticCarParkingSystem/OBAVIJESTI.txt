@@ -1,0 +1,7 @@
+﻿- treba dodati klase za dnevni izvjestaj, mjesecni i godisnji da bi se mogla forma koja se vlasniku
+otvara uvezati sa njima, 
+- treba napraviti formu za korisnika da bira sta ce da radi, da li da uplati ili sta
+i onda tu formu pokrenuti iz logina kada se korisnik loguje, imate komentar gdje se treba dodati tacno
+
+- treba napraviti klasu uplate i dodati u kontejnersku da bi vlasnik imao sta da gleda 
+- 
