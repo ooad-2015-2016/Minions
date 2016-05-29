@@ -40,7 +40,7 @@ namespace ProjekatAutomaticCarParkingSystem
                 Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
                 if (frame != null)
                 {
-                    frame.Navigate((typeof(FormaUnosDezurnogRadnika)));
+                    frame.Navigate((typeof(FORME.FormaDodajRadnika)));
                 }
             }
         }

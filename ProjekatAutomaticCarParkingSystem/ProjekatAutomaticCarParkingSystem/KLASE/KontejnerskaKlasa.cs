@@ -25,7 +25,7 @@ namespace ProjekatAutomaticCarParkingSystem
         public static Supervizor supervizor1 = new Supervizor("Merima", "Hadziabdic", "0539205923", "Sarajevo", "1241293842ds", new DateTime(1995,3,2),"merima","1234");
         public static List<DezurniRadnik> dezurniRadnici = new List<DezurniRadnik>
         {
-             new DezurniRadnik("Mirza", "Alipahic", "0038762342321", "Zmaja od bosne 15", "3935290582", new DateTime(1995, 3, 5),"9182490183f","radnik" ,"mirza95", "123456")
+             new DezurniRadnik("Mirza", "Alipahic", "0038762342321", "Zmaja od bosne 15", "3935290582", new DateTime(1995, 3, 5) ,"mirza95", "123456")
         };
        
     }
