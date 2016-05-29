@@ -57,7 +57,7 @@
         <TextBox x:Name="textBox3" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="16" TextWrapping="Wrap" Text="" Margin="0,7,0,4.333" Grid.RowSpan="3"/>
         <TextBlock x:Name="textBlock5" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,7,0,4.667" Grid.Row="18" TextWrapping="Wrap" Text="Opis popravke" Grid.RowSpan="3"/>
         <TextBox x:Name="textBox4" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="21" TextWrapping="Wrap" Text=""/>
-        <Button x:Name="button" Content="Natrag" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="23" VerticalAlignment="Stretch"/>
+        <Button x:Name="button" Content="Natrag" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="23" VerticalAlignment="Stretch" Click="button_Click"/>
         <Button x:Name="button1" Content="OK" Grid.Column="3" HorizontalAlignment="Stretch" Margin="-7.62939453125E-06,7.62939453125E-06,7.62939453125E-06,-7.62939453125E-06" Grid.Row="23" VerticalAlignment="Stretch"/>
 
     </Grid>

@@ -152,6 +152,30 @@ namespace ProjekatAutomaticCarParkingSystem
                     }
                 }
             }
+            //Forma za majstora
+            if (checkBox.IsChecked != true && radioButton4.IsChecked == true)
+            {
+                if (textBox.Text != "sedin95")
+                {
+                    textBlock2.Text = "Pogresno korisnicko ime!!!";
+
+                }
+                else if (passwordBox.Password != "1234")
+                { textBlock2.Text = "Pogresan password!!!"; }
+                else
+                {
+                    //ako sve okej prodje, otvara se forma za supervizora
+                    Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                    if (window != null)
+                    {
+                        Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                        if (frame != null)
+                        {
+                            frame.Navigate((typeof(FormaIzvjestajMajstora)));
+                        }
+                    }
+                }
+            }
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)
@@ -165,6 +189,11 @@ namespace ProjekatAutomaticCarParkingSystem
         }
 
         private void radioButton3_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButton4_Checked(object sender, RoutedEventArgs e)
         {
 
         }

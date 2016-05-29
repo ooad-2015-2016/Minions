@@ -42,7 +42,7 @@
         <TextBlock x:Name="textBlock2" Grid.ColumnSpan="5" Margin="13,0.333,13,90.666" Grid.Row="8" TextWrapping="Wrap" Text="" Foreground="Red" FontSize="32" TextAlignment="Center" Grid.RowSpan="3"/>
         <TextBlock x:Name="textBlock3" Grid.Column="3" Margin="0,20,13,0" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <TextBox x:Name="textBox" Grid.Column="3" Margin="0,20,13,0" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2" TextChanged="textBox_TextChanged"/>
-        <RadioButton x:Name="radioButton4" Grid.ColumnSpan="3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-6,2.86102294921875E-06,0" Grid.Row="8" VerticalAlignment="Stretch"/>
+        <RadioButton x:Name="radioButton4" Grid.ColumnSpan="3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-6,2.86102294921875E-06,0" Grid.Row="8" VerticalAlignment="Stretch" Checked="radioButton4_Checked"/>
 
     </Grid>
 </Page>
