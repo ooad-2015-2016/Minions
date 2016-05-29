@@ -78,13 +78,22 @@ namespace ProjekatAutomaticCarParkingSystem
                     {
                         nadjen = true;
 
-                        //ovdje treba napraviti da se otvara forma za korisnika 
+                        Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+                        if (window != null)
+                        {
+                            Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                            if (frame != null)
+                            {
+                                frame.Navigate((typeof(FormaKorisnik)));
+                            }
+                        }
                     }
 
                 }
                 //ako se ne nadje ni jedan korisnik sa usernameom i pw znaci da je pogrijesio
                 if (!nadjen) { textBlock2.Text = "Pogresan username ili password!!!"; }
             }
+            //Login za majstora
             if (checkBox.IsChecked != true && radioButton4.IsChecked == true)
             {
                 bool nadjen = false;
@@ -107,7 +116,7 @@ namespace ProjekatAutomaticCarParkingSystem
                 //ako se ne nadje ni jedan majstor sa usernameom i pw znaci da je pogrijesio
                 if(!nadjen) textBlock2.Text = "Pogresan username ili password!!!";
             }
-            //treba dodati za dezurnog radnika i supervizora
+            
             if (checkBox.IsChecked != true && radioButton2.IsChecked == true)
             {
                 bool nadjen = false;
