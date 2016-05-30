@@ -22,6 +22,7 @@ namespace ProjekatAutomaticCarParkingSystem
     /// </summary>
     public sealed partial class FormaUnosDezurnogRadnika : Page
     {
+        static List<DateTime> vremenaUnosa = new List<DateTime>();
         public FormaUnosDezurnogRadnika()
         {
             this.InitializeComponent();
@@ -58,11 +59,15 @@ namespace ProjekatAutomaticCarParkingSystem
                 }
             }
             if (datumrodj.Date.Year < 1920 || datumrodj.Date.Year > 1997)
-            { textBlock10.Text = "Niste unijeli dobro datum rođenja."; }
-            if (textBox4.Text.Length != 14) textBlock10.Text = "Pogresan format broja licne karte";
-            if (textBlock5.Text.Length > 10) textBlock10.Text = "Username ne moze biti duzi od 10 znakova";
-            if (passwordBox.Password.Length > 16) textBlock10.Text = "Password ne moze btii duzi od 16 znakoma";
-            foreach (char slovo in textBox7.Text)
+            { textBlock10.Text = "Niste unijeli dobro datum rođenja."; return; }
+            if (textBox4.Text.Length != 14) { textBlock10.Text = "Pogresan format broja licne karte"; return; }
+            foreach (DezurniRadnik item in KontejnerskaKlasa.dezurniRadnici)
+            {
+                if (item.Username == textBox5.Text) { textBlock10.Text = "Username vec zauzet."; return; }
+            }
+            if (textBox5.Text.Length > 10) { textBlock10.Text = "Username ne moze biti duzi od 10 znakova"; return; }
+            if (passwordBox.Password.Length > 16) { textBlock10.Text = "Password ne moze btii duzi od 16 znakoma"; return; }
+            foreach (char slovo in textBox3.Text)
             {
                 if (!Char.IsLetter(slovo))
                 {
@@ -91,6 +96,28 @@ namespace ProjekatAutomaticCarParkingSystem
                     frame.Navigate((typeof(FormaSupervizor)));
                 }
             }
+        }
+
+        private void textBox7_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (textBox7.Text == "")
+            {
+                vremenaUnosa.Clear();
+                textBlock9.Text = ""; return;
+            }
+            vremenaUnosa.Add(DateTime.Now);
+            if(vremenaUnosa.Count==10)
+            {
+                TimeSpan vrijemeIzmedju = vremenaUnosa.Last<DateTime>() - vremenaUnosa.First<DateTime>();
+                if (vrijemeIzmedju.TotalMilliseconds<500)
+                {
+                    textBlock9.Text = "RFID unijet preko uredjaja RFID reader";
+                }
+                else
+                { textBlock9.Text = "RFID unijet preko tastature"; }
+                vremenaUnosa.Clear();
+            }
+                
         }
     }
 }
