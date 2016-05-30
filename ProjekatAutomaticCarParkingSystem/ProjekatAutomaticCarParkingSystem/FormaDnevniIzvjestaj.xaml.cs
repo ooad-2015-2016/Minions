@@ -41,7 +41,7 @@ namespace ProjekatAutomaticCarParkingSystem
             {
                 //razlika vremena isplate i danasnjeg datuma:
                 TimeSpan razlika = item.DatumIsplate - DateTime.Now;
-                if (razlika.TotalDays == 0)
+                if (razlika.TotalDays < 0 && razlika.TotalDays>-1)
                     isplateZadnjiDan.Add(item);
             }
             listView.ItemsSource = isplateZadnjiDan;
@@ -62,6 +62,8 @@ namespace ProjekatAutomaticCarParkingSystem
             listaisplataitotal.Add(string.Format("Ukupno isplaceno ovog mjeseca: {0}", ukupno));
             //postavi kao izvor podataka listu stringova
             listView.ItemsSource = listaisplataitotal;
+
+            // Uplate
 
             List<KLASE.Uplata> uplateZadnjiDan = new List<KLASE.Uplata>();
             foreach (KLASE.Uplata item in KontejnerskaKlasa.uplate)

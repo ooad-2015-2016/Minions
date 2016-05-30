@@ -12,12 +12,16 @@ namespace ProjekatAutomaticCarParkingSystem
         {
             new KLASE.Isplata(125.25m,new DateTime(2016,5,17),"Popravka vrata"),
             new KLASE.Isplata(150m,new DateTime(2016,5,30),"Popravka dizalice")
+     
+            
 
         };
         public static List<KLASE.Uplata> uplate = new List<KLASE.Uplata>
         {
             new KLASE.Uplata(400m,new DateTime(2016,5,17),"Godišnja"),
-            new KLASE.Uplata(75m,new DateTime(2016,5,17),"Mjesečna")
+            new KLASE.Uplata(75m,new DateTime(2016,5,17),"Mjesečna"),
+            new KLASE.Uplata(10m,new DateTime(2016,4,17),"Dnevna")
+
 
         };
         public static List<DolazakNaPosao> dolasci = new List<DolazakNaPosao>();

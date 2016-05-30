@@ -49,6 +49,29 @@ namespace ProjekatAutomaticCarParkingSystem.FORME
             }
             listaisplataitotal.Add(string.Format("Ukupno isplaceno ovog mjeseca: {0}", ukupnom));
             listView.ItemsSource = listaisplataitotal;
+
+            //Uplate:
+            List<KLASE.Uplata> uplatezadnjiMjesec = new List<KLASE.Uplata>();
+            decimal ukupnom_uplate = 0m;
+            foreach (KLASE.Uplata item in KontejnerskaKlasa.uplate)
+            {
+                //ako je proslo 0 godina izmedju danasnjeg dana i dana uplate i 0 mjeseci znaci
+                //da je bila u zadnjem mjesecu uplata
+                if (item.DatumUplate.Year - DateTime.Now.Year == 0 && item.DatumUplate.Month - DateTime.Now.Month == 0)
+                    uplatezadnjiMjesec.Add(item);
+            }
+            foreach (KLASE.Uplata uplata in uplatezadnjiMjesec)
+            {
+                //za svaku uplatu koja se nalazi u zadnjem mjesecu saberi cijene i dodaj na ukupno;
+                ukupnom_uplate += uplata.Vrijednost;
+            }
+            List<string> listauplataitotal = new List<string>();
+            foreach (KLASE.Uplata uplata in uplatezadnjiMjesec)
+            {
+                listauplataitotal.Add(uplata.ToString());
+            }
+            listauplataitotal.Add(string.Format("Ukupno uplaceno ovog mjeseca: {0}", ukupnom_uplate));
+            listView1.ItemsSource = listauplataitotal;
         }
 
         private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)

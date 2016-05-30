@@ -80,6 +80,7 @@ namespace ProjekatAutomaticCarParkingSystem
             }
             //ako prodju sve validacije
             //dodajemo korisnika u kontejnersku klasu
+
             KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox8.Text, textBox7.Text, textBox5.Text, passwordBox.Password));
             Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
             if (window != null)

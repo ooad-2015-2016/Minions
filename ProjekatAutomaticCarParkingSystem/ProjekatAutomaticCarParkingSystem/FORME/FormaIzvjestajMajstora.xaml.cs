@@ -44,5 +44,44 @@ namespace ProjekatAutomaticCarParkingSystem
         {
 
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock6_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            decimal broj;
+            bool jelDecimalni = decimal.TryParse(textBox5.Text, out broj);
+            if (!jelDecimalni)
+            {
+
+                textBlock6.Text = "Neispravna cijena!";
+                return;
+            }
+
+
+            KontejnerskaKlasa.isplate.Add(new KLASE.Isplata(broj, datum.Date.DateTime, textBox1.Text));
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(MainPage)));
+                }
+            }
+        }
     }
 }
