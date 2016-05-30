@@ -67,7 +67,8 @@
         <TextBox x:Name="textBox8" Grid.Column="3" Margin="7.62939453125E-06,7.80820846557617E-06,-7.62939453125E-06,-7.80820846557617E-06" Grid.Row="20" TextWrapping="Wrap" Text="" TextChanged="textBox8_TextChanged"/>
         <DatePicker x:Name="datumrodj" HorizontalAlignment="Stretch" Grid.Row="11" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Margin="9.5367431640625E-07,-9.5367431640625E-06,-9.5367431640625E-07,9.5367431640625E-06" Grid.Column="1"/>
         <PasswordBox x:Name="passwordBox" Grid.Column="3" Margin="0.333,0,0,9.667" Grid.Row="16" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock10" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" Text="TextBlock" Visibility="Collapsed" Foreground="#FFF00F0F"/>
+        <TextBlock x:Name="textBlock10" Grid.Column="1" Grid.Row="21" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" SelectionChanged="textBlock10_SelectionChanged" FontSize="30" TextAlignment="Center" Foreground="#FFFD0F04"/>
+
 
 
     </Grid>

@@ -59,11 +59,16 @@ namespace ProjekatAutomaticCarParkingSystem
                     return;
                 }
             }
-            if (datumrodj.Date.Year < 1920)
-            { textBlock10.Text = "Niste unijeli dobro datum rođenja."; }
-            if (textBox4.Text.Length != 14) textBlock10.Text = "Pogresan format broja licne karte";
-            if (textBlock5.Text.Length > 10) textBlock10.Text = "Username ne moze biti duzi od 10 znakova";
-            if (passwordBox.Password.Length > 16) textBlock10.Text = "Password ne moze btii duzi od 16 znakoma";
+            if (datumrodj.Date.Year < 1920 || datumrodj.Date.Year > 1997)
+            { textBlock10.Text = "Niste unijeli dobro datum rođenja."; return; }
+            if (textBox4.Text.Length != 14) { textBlock10.Text = "Pogresan format broja licne karte"; return; }
+            foreach (Korisnik item in KontejnerskaKlasa.korisnici)
+            {
+                if (item.Username == textBox5.Text) { textBlock10.Text = "Username vec zauzet."; return; }
+            }
+            if (textBox5.Text.Length > 10) { textBlock10.Text = "Username ne moze biti duzi od 10 znakova"; return; }
+            if (passwordBox.Password.Length > 16) { textBlock10.Text = "Password ne moze btii duzi od 16 znakoma"; return; }
+            
             foreach (char slovo in textBox3.Text)
             {
                 if (!Char.IsLetter(slovo))
@@ -136,6 +141,11 @@ namespace ProjekatAutomaticCarParkingSystem
         }
 
         private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock10_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
