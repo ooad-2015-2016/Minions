@@ -128,6 +128,7 @@
     <Compile Include="FORME\FormaVlasnikIzvjestaji.xaml.cs">
       <DependentUpon>FormaVlasnikIzvjestaji.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KLASE\Isplata.cs" />
     <Compile Include="KLASE\IVozila.cs" />
     <Compile Include="KLASE\Izvjestaj.cs" />
     <Compile Include="KLASE\IzvjestajAbstact.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="KLASE\Majstor.cs" />
     <Compile Include="KLASE\Osoba.cs" />
     <Compile Include="KLASE\Osobe.cs" />
+    <Compile Include="KLASE\Uplata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="KLASE\Rfid.cs" />
     <Compile Include="KLASE\Supervizor.cs" />

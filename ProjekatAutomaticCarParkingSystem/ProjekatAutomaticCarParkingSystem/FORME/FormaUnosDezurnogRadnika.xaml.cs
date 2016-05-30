@@ -83,6 +83,16 @@ namespace ProjekatAutomaticCarParkingSystem
             radnik.RFID = textBox7.Text;
             KontejnerskaKlasa.dezurniRadnici.Add(radnik);
 
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaSupervizor)));
+                }
+            }
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -118,6 +128,22 @@ namespace ProjekatAutomaticCarParkingSystem
                 vremenaUnosa.Clear();
             }
                 
+        }
+
+
+        private void textBox4_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void passwordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

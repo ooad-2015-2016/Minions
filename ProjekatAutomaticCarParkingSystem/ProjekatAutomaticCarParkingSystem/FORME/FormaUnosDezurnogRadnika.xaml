@@ -53,15 +53,15 @@
         <TextBlock x:Name="textBlock5" Margin="11,0.667,44.667,9.667" Grid.Row="13" TextWrapping="Wrap" Text="Broj lične karte" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <TextBlock x:Name="textBlock6" Grid.Row="15" TextWrapping="Wrap" Text="Username" Margin="11,0.333,44.667,9" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <TextBlock x:Name="textBlock7" Grid.Row="17" TextWrapping="Wrap" Text="Password" Margin="11,1,44.667,8.333" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBox" Grid.Column="3" Margin="0.333,0,10,0" TextWrapping="Wrap" Text="" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" Grid.Column="3" Margin="0.333,0,10,0" TextWrapping="Wrap" Text="" Grid.Row="2" Grid.ColumnSpan="2" TextChanged="textBox_TextChanged"/>
         <TextBox x:Name="textBox1" Grid.Column="3" Margin="0.333,0,10,0" Grid.Row="4" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
         <TextBox x:Name="textBox2" Grid.Column="3" Margin="0.333,0,10,0" Grid.Row="6" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
         <TextBox x:Name="textBox3" Grid.Column="3" Margin="0.333,0,10,0" Grid.Row="8" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox4" Grid.Column="3" Margin="0.333,0.667,10,9.667" Grid.Row="13" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox4" Grid.Column="3" Margin="0.333,0.667,10,9.667" Grid.Row="13" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2" TextChanged="textBox4_TextChanged"/>
         <TextBox x:Name="textBox5" Grid.Column="3" Margin="0.333,0.333,10,9" Grid.Row="15" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <TextBox x:Name="textBox7" Grid.Column="3" Margin="0.333,0,10,9.333" Grid.Row="19" TextWrapping="Wrap" Text="" TextChanged="textBox7_TextChanged" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="38" VerticalAlignment="Bottom" PlaceholderText="" InputScope="Default" MaxLength="10" IsTextPredictionEnabled="False"/>
         <DatePicker x:Name="datumrodj" HorizontalAlignment="Stretch" Grid.Row="12" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Margin="0.667,0.667,11,39.667" Grid.Column="1" Grid.RowSpan="2"/>
-        <PasswordBox x:Name="passwordBox" Grid.Column="3" Margin="0.333,1,11,9.333" Grid.Row="17" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="3" Margin="0.333,1,11,9.333" Grid.Row="17" Grid.ColumnSpan="2" Grid.RowSpan="2" PasswordChanged="passwordBox_PasswordChanged"/>
         <TextBlock x:Name="textBlock10" Grid.ColumnSpan="4" TextWrapping="Wrap" Text="" Visibility ="Visible" Foreground="#FFF00F0F" Margin="1.78813934326172E-07,-1.15334987640381E-05,-0.000335872173309326,4.20510768890381E-05" Grid.Row="21" Grid.Column="1"/>
         <TextBlock x:Name="textBlock8" Margin="11,0.667,44.667,9.667" Grid.Row="19" TextWrapping="Wrap" Text="RFID" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <TextBlock x:Name="textBlock9" Grid.ColumnSpan="3" Grid.Column="1" Margin="9.5367431640625E-07,7.62939453125E-06,-9.5367431640625E-07,-7.62939453125E-06" Grid.Row="22" TextWrapping="Wrap" Text=""/>
