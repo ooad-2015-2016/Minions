@@ -57,14 +57,14 @@
         	<Run Text="manje"/>
         </TextBlock>
         <TextBlock x:Name="textBlock9" Grid.Column="1" Margin="0,9.333,38.667,0" Grid.Row="19" TextWrapping="Wrap" Text="Broj vozačke" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBox" Grid.Column="3" Margin="7.62939453125E-06,2.38418579101563E-07,-7.62939453125E-06,3.57627868652344E-06" TextWrapping="Wrap" Text="" Grid.Row="2"/>
-        <TextBox x:Name="textBox1" Grid.Column="3" Margin="7.62939453125E-06,2.38418579101563E-07,-7.62939453125E-06,3.57627868652344E-06" Grid.Row="4" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox2" Grid.Column="3" Margin="7.62939453125E-06,2.38418579101563E-07,-7.62939453125E-06,-2.38418579101563E-07" Grid.Row="6" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox3" Grid.Column="3" Margin="7.62939453125E-06,-7.39097595214844E-06,-7.62939453125E-06,7.39097595214844E-06" Grid.Row="8" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox4" Grid.Column="3" Margin="7.53998756408691E-06,5.63263893127441E-06,-7.53998756408691E-06,-5.63263893127441E-06" Grid.Row="12" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox5" Grid.Column="3" Margin="7.53998756408691E-06,0,-7.53998756408691E-06,0" Grid.Row="14" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox7" Grid.Column="3" Margin="7.62939453125E-06,7.83801078796387E-06,-7.62939453125E-06,-7.83801078796387E-06" Grid.Row="18" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox8" Grid.Column="3" Margin="7.62939453125E-06,7.80820846557617E-06,-7.62939453125E-06,-7.80820846557617E-06" Grid.Row="20" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox" Grid.Column="3" Margin="7.62939453125E-06,2.38418579101563E-07,-7.62939453125E-06,3.57627868652344E-06" TextWrapping="Wrap" Text="" Grid.Row="2" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="textBox1" Grid.Column="3" Margin="7.62939453125E-06,2.38418579101563E-07,-7.62939453125E-06,3.57627868652344E-06" Grid.Row="4" TextWrapping="Wrap" Text="" TextChanged="textBox1_TextChanged"/>
+        <TextBox x:Name="textBox2" Grid.Column="3" Margin="7.62939453125E-06,2.38418579101563E-07,-7.62939453125E-06,-2.38418579101563E-07" Grid.Row="6" TextWrapping="Wrap" Text="" TextChanged="textBox2_TextChanged"/>
+        <TextBox x:Name="textBox3" Grid.Column="3" Margin="7.62939453125E-06,-7.39097595214844E-06,-7.62939453125E-06,7.39097595214844E-06" Grid.Row="8" TextWrapping="Wrap" Text="" TextChanged="textBox3_TextChanged"/>
+        <TextBox x:Name="textBox4" Grid.Column="3" Margin="7.53998756408691E-06,5.63263893127441E-06,-7.53998756408691E-06,-5.63263893127441E-06" Grid.Row="12" TextWrapping="Wrap" Text="" TextChanged="textBox4_TextChanged"/>
+        <TextBox x:Name="textBox5" Grid.Column="3" Margin="7.53998756408691E-06,0,-7.53998756408691E-06,0" Grid.Row="14" TextWrapping="Wrap" Text="" TextChanged="textBox5_TextChanged"/>
+        <TextBox x:Name="textBox7" Grid.Column="3" Margin="7.62939453125E-06,7.83801078796387E-06,-7.62939453125E-06,-7.83801078796387E-06" Grid.Row="18" TextWrapping="Wrap" Text="" TextChanged="textBox7_TextChanged"/>
+        <TextBox x:Name="textBox8" Grid.Column="3" Margin="7.62939453125E-06,7.80820846557617E-06,-7.62939453125E-06,-7.80820846557617E-06" Grid.Row="20" TextWrapping="Wrap" Text="" TextChanged="textBox8_TextChanged"/>
         <DatePicker x:Name="datumrodj" HorizontalAlignment="Stretch" Grid.Row="11" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Margin="9.5367431640625E-07,-9.5367431640625E-06,-9.5367431640625E-07,9.5367431640625E-06" Grid.Column="1"/>
         <PasswordBox x:Name="passwordBox" Grid.Column="3" Margin="0.333,0,0,9.667" Grid.Row="16" Grid.RowSpan="2"/>
         <TextBlock x:Name="textBlock10" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" Text="TextBlock" Visibility="Collapsed" Foreground="#FFF00F0F"/>

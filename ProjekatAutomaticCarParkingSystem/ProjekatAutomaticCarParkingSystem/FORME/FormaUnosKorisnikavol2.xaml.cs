@@ -75,8 +75,16 @@ namespace ProjekatAutomaticCarParkingSystem
             }
             //ako prodju sve validacije
             //dodajemo korisnika u kontejnersku klasu
-            KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox5.Text, textBox7.Text, textBox8.Text, passwordBox.Password));
-            
+            KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox8.Text, textBox7.Text, textBox5.Text, passwordBox.Password));
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaDezurniRadnik)));
+                }
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -90,6 +98,46 @@ namespace ProjekatAutomaticCarParkingSystem
                     frame.Navigate((typeof(FormaDezurniRadnik)));
                 }
             }
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
