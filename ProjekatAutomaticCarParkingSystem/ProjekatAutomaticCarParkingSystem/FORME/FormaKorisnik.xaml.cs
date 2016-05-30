@@ -47,7 +47,7 @@ namespace ProjekatAutomaticCarParkingSystem
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            if (textBox.Text.Length != 16) { textBlock1.Text = "Pogresan format broja licne karte"; return; }
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)
@@ -71,6 +71,21 @@ namespace ProjekatAutomaticCarParkingSystem
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock1_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBlock4_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
         }
