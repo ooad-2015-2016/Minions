@@ -8,7 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded">
-        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="303*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="298*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged" Margin="-2.86102294921875E-06,-0.666679382324219,-0.333340644836426,2.288818359375E-05" Grid.Row="1" Grid.Column="1"/>
 
     </Grid>
 </Page>

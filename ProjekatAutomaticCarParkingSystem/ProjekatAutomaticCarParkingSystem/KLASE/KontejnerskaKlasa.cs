@@ -8,6 +8,10 @@ namespace ProjekatAutomaticCarParkingSystem
 {
     class KontejnerskaKlasa
     {
+        public static List<KLASE.Isplata> isplate = new List<KLASE.Isplata>
+        {
+            new KLASE.Isplata(125.25m,new DateTime(2016,5,17),"Popravka vrata")
+        };
         public static List<DolazakNaPosao> dolasci = new List<DolazakNaPosao>();
         public static List<IzvjestajMajstora> izvjestajiMajstvora = new List<IzvjestajMajstora>();
         public static List<Majstor> majstori = new List<Majstor>

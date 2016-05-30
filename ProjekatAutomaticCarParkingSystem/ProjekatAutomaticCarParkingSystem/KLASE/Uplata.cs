@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProjekatAutomaticCarParkingSystem.KLASE
 {
-    class Uplata
+    public class Uplata
     {
-        int vrijednost;
+        decimal vrijednost;
         DateTime datumUplate;
         String doznakaUplate;
-        public int Vrijednost{ get { return vrijednost; } set{ vrijednost= value; } }
+        public decimal Vrijednost{ get { return vrijednost; } set{ vrijednost= value; } }
         public DateTime DatumUplate { get { return datumUplate; } set { datumUplate = value; } }
         public String DoznakaUplate { get { return doznakaUplate; } set { doznakaUplate = value; } }
         public override string ToString()
         {
-            return string.Format("Uplata - datum: {0}, Doznaka: {1}, Ukupno KM: {2}", datumUplate, doznakaUplate, vrijednost);
+            return string.Format("Uplata - datum: {0}, Doznaka: {1}, Ukupno KM: {2}", datumUplate.ToString(), doznakaUplate, vrijednost);
         }
     }
 }
