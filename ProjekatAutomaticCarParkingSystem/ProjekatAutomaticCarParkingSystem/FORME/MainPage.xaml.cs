@@ -102,7 +102,7 @@ namespace ProjekatAutomaticCarParkingSystem
                 Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
                 if (frame != null)
                 {
-                    frame.Navigate((typeof(FormaLogin)));
+                    frame.Navigate((typeof(FormaKorisnik)));
                 }
             }
         }
