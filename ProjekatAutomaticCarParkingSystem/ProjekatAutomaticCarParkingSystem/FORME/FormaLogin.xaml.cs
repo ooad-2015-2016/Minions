@@ -50,7 +50,7 @@ namespace ProjekatAutomaticCarParkingSystem
             //provjerava validnost podataka ako vlasnik nije zaboravio pasword
             if (checkBox.IsChecked != true && radioButton.IsChecked == true)
             {
-                if (textBox.Text != "jasamglavni")
+                if (textBox.Text != "boss")
                 {
                     textBlock2.Text = "Pogresno korisnicko ime!!!";
 

@@ -39,5 +39,10 @@ namespace ProjekatAutomaticCarParkingSystem
                 }
             }
         }
+
+        private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

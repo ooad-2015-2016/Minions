@@ -9,31 +9,33 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="34*"/>
             <RowDefinition Height="10*"/>
-            <RowDefinition Height="43*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="36*"/>
             <RowDefinition Height="7*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="31*"/>
-            <RowDefinition Height="6*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="13*"/>
             <RowDefinition Height="37*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="36*"/>
             <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="11*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10*"/>
@@ -42,23 +44,25 @@
             <ColumnDefinition Width="71*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" Margin="0,-9.5367431640625E-07,0,9.5367431640625E-07" Grid.Row="1">
+        <TextBlock x:Name="textBlock" Grid.ColumnSpan="3" Grid.Column="1" TextWrapping="Wrap" Grid.Row="1">
         	<Run Text="Datum"/>
         	<Run Text=" izvještaja"/>
         </TextBlock>
-        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Grid.Column="1" Margin="0,1.333,0,-0.667"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="ID Majstora" Margin="0,0,-0.000335693359375,0"/>
-        <TextBox x:Name="textBox" Grid.Column="2" Margin="20.333,0.333,17,4.667" Grid.Row="5" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock2" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Text="Opis kvara" Margin="0,0.333,0,5" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBox1" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,1,0,3.667" Grid.Row="9" TextWrapping="Wrap" Text="" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock3" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,0.333,0,5" Grid.Row="11" TextWrapping="Wrap" Text="Materijal" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBox2" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="13" TextWrapping="Wrap" Text="" Margin="0,0,0,5.333" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock4" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,-7.62939453125E-06,0,7.62939453125E-06" Grid.Row="15" TextWrapping="Wrap" Text="Uputstvo za rukovanje"/>
-        <TextBox x:Name="textBox3" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="16" TextWrapping="Wrap" Text="" Margin="0,7,0,4.333" Grid.RowSpan="3"/>
-        <TextBlock x:Name="textBlock5" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,7,0,4.667" Grid.Row="18" TextWrapping="Wrap" Text="Opis popravke" Grid.RowSpan="3"/>
-        <TextBox x:Name="textBox4" Grid.ColumnSpan="3" Grid.Column="1" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="21" TextWrapping="Wrap" Text=""/>
-        <Button x:Name="button" Content="Natrag" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,7.62939453125E-06,0,-7.62939453125E-06" Grid.Row="23" VerticalAlignment="Stretch" Click="button_Click"/>
-        <Button x:Name="button1" Content="OK" Grid.Column="3" HorizontalAlignment="Stretch" Margin="-7.62939453125E-06,7.62939453125E-06,7.62939453125E-06,-7.62939453125E-06" Grid.Row="23" VerticalAlignment="Stretch"/>
+        <DatePicker Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Grid.Column="1" Margin="0,1,0,0"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="ID Majstora" Margin="0,0,16.333,0" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" Grid.Column="2" Margin="20.333,0,13,2" Grid.Row="5" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="textBlock2" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Text="Opis kvara"/>
+        <TextBox x:Name="textBox1" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="9" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock3" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="11" TextWrapping="Wrap" Text="Materijal"/>
+        <TextBox x:Name="textBox2" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="13" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock4" Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="15" TextWrapping="Wrap" Text="Uputstvo za rukovanje" Margin="4,0,17,0"/>
+        <TextBox x:Name="textBox3" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="17" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock5" Grid.Row="19" TextWrapping="Wrap" Text="Opis popravke" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBox x:Name="textBox4" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="21" TextWrapping="Wrap" Text="" Margin="0,0,0,4"/>
+        <Button x:Name="button" Content="Natrag" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="25" VerticalAlignment="Stretch" Click="button_Click"/>
+        <Button x:Name="button1" Content="OK" Grid.Column="3" HorizontalAlignment="Stretch" Margin="-7.62939453125E-06,0,7.62939453125E-06,0" Grid.Row="25" VerticalAlignment="Stretch"/>
+        <TextBox x:Name="textBox5" Grid.Row="23" TextWrapping="Wrap" Text="" TextChanged="textBox5_TextChanged" Grid.Column="3" Margin="-7.62939453125E-06,0,7.62939453125E-06,0"/>
+        <TextBlock x:Name="textBlock7" Grid.Column="1" Grid.Row="23" TextWrapping="Wrap" Text="Cijena" RenderTransformOrigin="-3.43,1.583"/>
 
     </Grid>
 </Page>

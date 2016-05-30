@@ -7,18 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded" Height="640" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="303*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="298*"/>
-            <RowDefinition Height="10*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="303*"/>
+            <RowDefinition Height="297*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
-        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged" Margin="-2.86102294921875E-06,-0.666679382324219,-0.333340644836426,2.288818359375E-05" Grid.Row="1" Grid.Column="1"/>
+        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged" Grid.Row="1" Margin="9.5367431640625E-07,0,-9.5367431640625E-07,0" Grid.Column="1"/>
+        <ListView x:Name="listView1" Grid.Column="1" Margin="-2.86102294921875E-06,0,2.86102294921875E-06,0" Grid.Row="2" RenderTransformOrigin="0.486,0.54" SelectionChanged="listView1_SelectionChanged"/>
 
     </Grid>
 </Page>

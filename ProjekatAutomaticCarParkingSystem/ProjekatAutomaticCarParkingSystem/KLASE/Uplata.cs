@@ -14,6 +14,16 @@ namespace ProjekatAutomaticCarParkingSystem.KLASE
         public decimal Vrijednost{ get { return vrijednost; } set{ vrijednost= value; } }
         public DateTime DatumUplate { get { return datumUplate; } set { datumUplate = value; } }
         public String DoznakaUplate { get { return doznakaUplate; } set { doznakaUplate = value; } }
+        public Uplata()
+        {
+
+        }
+        public Uplata(decimal _vrijednost, DateTime _datum, string _doznaka)
+        {
+            vrijednost = _vrijednost;
+            datumUplate = _datum;
+            doznakaUplate = _doznaka;
+        }
         public override string ToString()
         {
             return string.Format("Uplata - datum: {0}, Doznaka: {1}, Ukupno KM: {2}", datumUplate.ToString(), doznakaUplate, vrijednost);

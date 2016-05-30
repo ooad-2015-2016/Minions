@@ -95,11 +95,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlankPage1.xaml.cs">
-      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    <Compile Include="FormaDnevniIzvjestaj.xaml.cs">
+      <DependentUpon>FormaDnevniIzvjestaj.xaml</DependentUpon>
     </Compile>
     <Compile Include="FORME\FormaKorisnik.xaml.cs">
       <DependentUpon>FormaKorisnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FORME\FormaMjesecniIzvjestaj.xaml.cs">
+      <DependentUpon>FormaMjesecniIzvjestaj.xaml</DependentUpon>
     </Compile>
     <Compile Include="KLASE\Automobil.cs" />
     <Compile Include="KLASE\DezurniRadnik.cs" />
@@ -169,7 +172,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BlankPage1.xaml">
+    <Page Include="FormaDnevniIzvjestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,6 +189,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FORME\FormaLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FORME\FormaMjesecniIzvjestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
