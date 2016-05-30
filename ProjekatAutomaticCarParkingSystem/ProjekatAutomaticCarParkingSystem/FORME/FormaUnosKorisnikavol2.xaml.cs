@@ -28,7 +28,7 @@ namespace ProjekatAutomaticCarParkingSystem
         }
 //event za klik na dugme dodaj
         private void button_Click(object sender, RoutedEventArgs e)
-        { 
+        {
             //validacija
             foreach (char slovo in textBox.Text)
             {
@@ -59,12 +59,17 @@ namespace ProjekatAutomaticCarParkingSystem
                     return;
                 }
             }
-            if(datumrodj.Date.Year< 1920)
-            { textBlock10.Text = "Niste unijeli dobro datum rođenja."; }
-            if (textBox4.Text.Length != 14) textBlock10.Text = "Pogresan format broja licne karte";
-            if (textBlock5.Text.Length > 10) textBlock10.Text = "Username ne moze biti duzi od 10 znakova";
-            if (passwordBox.Password.Length > 16) textBlock10.Text = "Password ne moze btii duzi od 16 znakoma";
-            foreach (char slovo in textBox7.Text)
+            if (datumrodj.Date.Year < 1920 || datumrodj.Date.Year > 1997)
+            { textBlock10.Text = "Niste unijeli dobro datum rođenja."; return; }
+            if (textBox4.Text.Length != 14) { textBlock10.Text = "Pogresan format broja licne karte"; return; }
+            foreach (Korisnik item in KontejnerskaKlasa.korisnici)
+            {
+                if (item.Username == textBox5.Text) { textBlock10.Text = "Username vec zauzet."; return; }
+            }
+            if (textBox5.Text.Length > 10) { textBlock10.Text = "Username ne moze biti duzi od 10 znakova"; return; }
+            if (passwordBox.Password.Length > 16) { textBlock10.Text = "Password ne moze btii duzi od 16 znakoma"; return; }
+            
+            foreach (char slovo in textBox3.Text)
             {
                 if (!Char.IsLetter(slovo))
                 {
@@ -75,8 +80,16 @@ namespace ProjekatAutomaticCarParkingSystem
             }
             //ako prodju sve validacije
             //dodajemo korisnika u kontejnersku klasu
-            KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox5.Text, textBox7.Text, textBox8.Text, passwordBox.Password));
-            
+            KontejnerskaKlasa.korisnici.Add(new Korisnik(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, datumrodj.Date.DateTime, textBox8.Text, textBox7.Text, textBox5.Text, passwordBox.Password));
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaDezurniRadnik)));
+                }
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -90,6 +103,51 @@ namespace ProjekatAutomaticCarParkingSystem
                     frame.Navigate((typeof(FormaDezurniRadnik)));
                 }
             }
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock10_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

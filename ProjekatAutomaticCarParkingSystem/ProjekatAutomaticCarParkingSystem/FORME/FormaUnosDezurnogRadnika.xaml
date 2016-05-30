@@ -57,7 +57,7 @@
         <TextBox x:Name="textBox1" Grid.Column="3" Margin="0.333,0,10,0" Grid.Row="4" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
         <TextBox x:Name="textBox2" Grid.Column="3" Margin="0.333,0,10,0" Grid.Row="6" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
         <TextBox x:Name="textBox3" Grid.Column="3" Margin="0.333,0,10,0" Grid.Row="8" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox4" Grid.Column="3" Margin="0.333,0.667,10,9.667" Grid.Row="13" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox4" Grid.Column="3" Margin="0.333,0.667,10,9.667" Grid.Row="13" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2" TextChanged="textBox4_TextChanged"/>
         <TextBox x:Name="textBox5" Grid.Column="3" Margin="0.333,0.333,10,9" Grid.Row="15" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <TextBox x:Name="textBox7" Grid.Column="3" Margin="0.333,0,10,9.333" Grid.Row="19" TextWrapping="Wrap" Text="" TextChanged="textBox7_TextChanged" Grid.ColumnSpan="2" Grid.RowSpan="2" Height="38" VerticalAlignment="Bottom" PlaceholderText="" InputScope="Default" MaxLength="10" IsTextPredictionEnabled="False"/>
         <DatePicker x:Name="datumrodj" HorizontalAlignment="Stretch" Grid.Row="12" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Margin="0.667,0.667,11,39.667" Grid.Column="1" Grid.RowSpan="2"/>
