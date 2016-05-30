@@ -130,15 +130,18 @@ namespace ProjekatAutomaticCarParkingSystem
                 
         }
 
-<<<<<<< HEAD
-=======
+
         private void textBox4_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
->>>>>>> a17fe6c3e82dd300a5e5d84a3115f83ab55d6963
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void passwordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
 
         }
