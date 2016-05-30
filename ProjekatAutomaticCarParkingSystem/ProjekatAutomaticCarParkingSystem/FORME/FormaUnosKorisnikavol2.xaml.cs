@@ -28,7 +28,7 @@ namespace ProjekatAutomaticCarParkingSystem
         }
 //event za klik na dugme dodaj
         private void button_Click(object sender, RoutedEventArgs e)
-        { 
+        {
             //validacija
             foreach (char slovo in textBox.Text)
             {
@@ -59,12 +59,12 @@ namespace ProjekatAutomaticCarParkingSystem
                     return;
                 }
             }
-            if(datumrodj.Date.Year< 1920)
+            if (datumrodj.Date.Year < 1920)
             { textBlock10.Text = "Niste unijeli dobro datum rođenja."; }
             if (textBox4.Text.Length != 14) textBlock10.Text = "Pogresan format broja licne karte";
             if (textBlock5.Text.Length > 10) textBlock10.Text = "Username ne moze biti duzi od 10 znakova";
             if (passwordBox.Password.Length > 16) textBlock10.Text = "Password ne moze btii duzi od 16 znakoma";
-            foreach (char slovo in textBox7.Text)
+            foreach (char slovo in textBox3.Text)
             {
                 if (!Char.IsLetter(slovo))
                 {
