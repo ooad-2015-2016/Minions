@@ -83,5 +83,18 @@ namespace ProjekatAutomaticCarParkingSystem
                 }
             }
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(MainPage)));
+                }
+            }
+        }
     }
 }
