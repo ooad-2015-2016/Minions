@@ -39,11 +39,11 @@ Dežurni radnik, u slučaju kvara na sistemu, prijavljuje kvar te poziva majstor
 
 
 ## **Funkcionalnosti**
-- Mogućnost uplate parkinga na satnoj,dnevnoj,mjesečnoj ili godišnjoj bazi sa posebnim pogodnostima za svaku.
-- Mogućnost korištenja parkinga u toku čitavog dana.
-- Mogućnost dobivanja informacije o isteku uplaćenog parkinga.
-- Mogućnost dobivanja izvještaja o poslovanju sa svim transakcijama.
-- Mogućnost provjere kad je koji radnik došao na posao.
+- Mogucnost uplate parkinga na satnoj,dnevnoj,mjesečnoj ili godišnjoj bazi sa posebnim pogodnostima za svaku.
+- Mogucnost korištenja parkinga u toku čitavog dana.
+- Mogucnost dobivanja informacije o isteku uplacenog parkinga.
+- Mogucnost dobivanja izvještaja o poslovanju sa svim transakcijama.
+- Mogucnost provjere kad je koji radnik došao na posao.
 
 ## **Akteri**
 
@@ -54,10 +54,46 @@ Osoba nadgleda dolazak radnika na posao te na kraju svakog dana novac odnosi u b
 Osoba vrši registraciju novih korisnika te nadgleda sistem. U slučaju kvara na sistemu,kvar prijavljuje te poziva majstora za popravke.
 
 **Korisnik**
-Osoba koja koristi parkiralište. Prilikom prvog dolaska se registruje, ima mogućnost uplate parkinga na određene vremenske periode te korištenja istog. 
+Osoba koja koristi parkiralište. Prilikom prvog dolaska se registruje, ima mogucnost uplate parkinga na određene vremenske periode te korištenja istog. 
 
 **Majstor**
 Osoba koja u slučaju kvara na sistemu dolazi te vrši potrebne popravke.
 
 **Vlasnik**
 Osoba koja ima pristup finansijskim izvještajima o poslovanju firme.
+
+## **Uputstvo za koristenje**
+
+**Pocetna stranica**
+
+Na pocetnoj stranici korisnici aplikacije imaju mogucnost da se prijave da bi nastavili sa daljnim koristenjem iste. Takoder
+postoji implementirana Help opcija koja korisniku olaksava koristenje aplikacije. Pored toga postoji i opcija "Dolasci" koja omogucava
+dobar uvid u to koliko koji radnik provodi vremena na poslu i sprijecava mogucnost "varanja".
+
+**Log in**
+
+Nakon sto korisnik odabere opciju prijave na pocetnoj stranici potrebno je sada da unese svoje osnovne podatke i funkciju koju on izvrsava. Svako polje zahtijeva unos
+ispravnih podataka. U slucaju da se zaboravi password potrebno je da se korisnik aplikacije javi vlasniku firme.
+
+**Vlasnik**
+
+Nakon logovanja ima ponudenu mogucnost uvida u dnevni,mjesecni i godisnji izvjestaj.
+
+**Majstor**
+
+Nakon prijave ima mogucnost popunjavanja izvjestaja koji sadrzi sve potrebne podatke vezane za kvar i popravku.
+
+**Supervizor**
+
+Nakon prijavljivanja supervizor ima ponudene tri mogucnost. Ima uvid u sve korisnike koji su koristili RFID uredaj. Takoder moze
+izvrsiti prijavljivanje novog radnika kao i vratiti se na pocetnu stranicu.
+
+**Korisnik**
+
+Nakon logovanja ima mogucnost odabira vremenskog perioda za koji zeli uplatiti parking. Uz sve to je potreban broj kreditne kartice.
+Takoder korisnik vidi i cjenovnik koji mu moze pomoci pri odabiru navedenih opcija.
+
+**Dezurni radnik**
+
+Dezurni radnik poziva majstora u slucaju kvara. Takoder on prijavljuje nove korisnike parkinga koji dolaze prvi put. Poziv majstora se
+vrsi telefonskim pozivom.
