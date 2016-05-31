@@ -8,29 +8,40 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded" GotFocus="Grid_GotFocus">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="18*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="16*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="17*"/>
-            <RowDefinition Height="122*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="16*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="18*"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="257*"/>
-            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="7*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Vlasnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="1" VerticalAlignment="Stretch" BorderBrush="#FFFB0E0E" Foreground="#FF0E0A0A" Background="#33DC0606" Click="button_Click" FontSize="32" Grid.ColumnSpan="2"/>
-        <Button x:Name="button1" Content="Dežurni radnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3306FF11" BorderBrush="#FF176301" Click="button1_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="button2" Content="Supervizor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#339700FF" BorderBrush="#FF4D077E" Click="button2_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="button3" Content="Majstor" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="7" VerticalAlignment="Stretch" FontSize="32" Background="#33020DEA" BorderBrush="#FF14035F" Click="button3_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="button4" Content="Korisnik" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.333,0,50,0" Grid.Row="9" VerticalAlignment="Stretch" BorderBrush="#FF171313" FontSize="32" Grid.ColumnSpan="2" Click="button4_Click_1"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="110*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="253*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="Help" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="#330808FD" Click="button_Click_1"/>
+        <TextBlock x:Name="textBlock" Visibility="Collapsed" Grid.Column="3" Grid.Row="2" TextWrapping="Wrap" Text="Ukoliko želite koristiti mogučnosti automatskog parkiranja morate se prijaviti Ukoliko ne posjedujete račun, obratite se jednom od dežurnih radnika koji će vam pomoći." Grid.ColumnSpan="2" Foreground="Black" TextAlignment="Center" SelectionChanged="textBlock_SelectionChanged" Grid.RowSpan="2"/>
+        <Image x:Name="image" Margin="6.959,13.201,0.135,-0.05" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Source="ms-appx:///Assets/LogoAuto.jpg" Stretch="Fill" Grid.ColumnSpan="3">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.087"/>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="button1" Content="Prijavi se" Grid.Column="2" HorizontalAlignment="Stretch" Margin="0.338,-0.142,74.699,15.25" Grid.Row="6" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="3" Click="button1_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.065"/>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="Sistem Automatskog Parkiranja" Grid.ColumnSpan="4" FontSize="30" TextAlignment="Center" Foreground="#FF1515F0"/>
+
+
 
     </Grid>
 </Page>

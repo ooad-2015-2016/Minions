@@ -22,8 +22,6 @@ namespace ProjekatAutomaticCarParkingSystem
             new KLASE.Uplata(75m,new DateTime(2016,5,17),"Mjesečna"),
             new KLASE.Uplata(10m,new DateTime(2016,3,17),"Dnevna"),
             new KLASE.Uplata(75m,new DateTime(2015,5,17),"Mjesečna")
-
-
         };
         public static List<DolazakNaPosao> dolasci = new List<DolazakNaPosao>();
         public static List<IzvjestajMajstora> izvjestajiMajstvora = new List<IzvjestajMajstora>();

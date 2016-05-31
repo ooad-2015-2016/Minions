@@ -95,10 +95,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FormaDnevniIzvjestaj.xaml.cs">
+    <Compile Include="FORME\FormaDnevniIzvjestaj.xaml.cs">
       <DependentUpon>FormaDnevniIzvjestaj.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FormaGodisnjiIzvjestaj.xaml.cs">
+    <Compile Include="FORME\FormaGodisnjiIzvjestaj.xaml.cs">
       <DependentUpon>FormaGodisnjiIzvjestaj.xaml</DependentUpon>
     </Compile>
     <Compile Include="FORME\FormaKorisnik.xaml.cs">
@@ -160,6 +160,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\LogoAuto.jpg" />
     <Content Include="OBAVIJESTI.txt" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -175,11 +176,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="FormaDnevniIzvjestaj.xaml">
+    <Page Include="FORME\FormaDnevniIzvjestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FormaGodisnjiIzvjestaj.xaml">
+    <Page Include="FORME\FormaGodisnjiIzvjestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

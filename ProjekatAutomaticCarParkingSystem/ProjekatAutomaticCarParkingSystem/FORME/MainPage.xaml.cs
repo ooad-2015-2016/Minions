@@ -27,18 +27,26 @@ namespace ProjekatAutomaticCarParkingSystem
         {
             this.InitializeComponent();
         }
-
-        private void button_Click(object sender, RoutedEventArgs e)
+     
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaLogin)));
-                }
-            }
+          
+        }
+
+        private void Grid_GotFocus(object sender, RoutedEventArgs e)
+        {
+         
+        }
+        bool vidljiv = false;
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (!vidljiv) { textBlock.Visibility = Visibility.Visible; vidljiv = true; }
+            else { textBlock.Visibility = Visibility.Collapsed; vidljiv = false; }
+        }
+
+        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -52,70 +60,6 @@ namespace ProjekatAutomaticCarParkingSystem
                     frame.Navigate((typeof(FormaLogin)));
                 }
             }
-
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaLogin)));
-                }
-            }
-        }
-
-        private void button3_Click(object sender, RoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaLogin)));
-                }
-            }
-        }
-
-        private void button4_Click(object sender, RoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaLogin)));
-                }
-            }
-
-        }
-
-        private void button4_Click_1(object sender, RoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
-            if (window != null)
-            {
-                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
-                if (frame != null)
-                {
-                    frame.Navigate((typeof(FormaKorisnik)));
-                }
-            }
-        }
-
-        private void Grid_Loaded(object sender, RoutedEventArgs e)
-        {
-          
-        }
-
-        private void Grid_GotFocus(object sender, RoutedEventArgs e)
-        {
-         
         }
     }
 }
