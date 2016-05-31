@@ -191,5 +191,26 @@ namespace ProjekatAutomaticCarParkingSystem
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void passwordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+        bool vidljiv = false;
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            if (!vidljiv) { textBlock3.Visibility = Visibility.Visible; vidljiv = true; }
+            else { textBlock3.Visibility = Visibility.Collapsed; vidljiv = false; }
+        }
+
+        private void textBlock3_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
