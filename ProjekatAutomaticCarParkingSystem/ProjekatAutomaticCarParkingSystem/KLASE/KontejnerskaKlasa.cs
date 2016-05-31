@@ -23,7 +23,15 @@ namespace ProjekatAutomaticCarParkingSystem
             new KLASE.Uplata(10m,new DateTime(2016,3,17),"Dnevna"),
             new KLASE.Uplata(75m,new DateTime(2015,5,17),"Mjesečna")
         };
-        public static List<DolazakNaPosao> dolasci = new List<DolazakNaPosao>();
+        public static List<DolazakNaPosao> dolasci = new List<DolazakNaPosao>
+        {
+           new DolazakNaPosao(new DateTime(2016,5,31,8,00,00),"0004218828"),
+           new DolazakNaPosao(new DateTime(2016,5,31,15,0,0),"0004218828"),
+           new DolazakNaPosao(new DateTime(2016,5,30,8,0,0),"0006881644"),
+           new DolazakNaPosao(new DateTime(2016,5,30,15,0,0),"0006881644"),
+           new DolazakNaPosao(new DateTime(2016,5,31,8,0,0),"0006881644")
+
+        };
         public static List<IzvjestajMajstora> izvjestajiMajstvora = new List<IzvjestajMajstora>();
         public static List<Majstor> majstori = new List<Majstor>
         {
@@ -41,9 +49,11 @@ namespace ProjekatAutomaticCarParkingSystem
         public static Supervizor supervizor1 = new Supervizor("Merima", "Hadziabdic", "0539205923", "Sarajevo", "1241293842ds", new DateTime(1995,3,2),"merima","1234");
         public static List<DezurniRadnik> dezurniRadnici = new List<DezurniRadnik>
         {
-             new DezurniRadnik("Mirza", "Alipahic", "0038762342321", "Zmaja od bosne 15", "3935290582", new DateTime(1995, 3, 5) ,"mirza95", "123456")
+             new DezurniRadnik("Mirza", "Alipahic", "0038762342321", "Zmaja od bosne 15", "2s5d6s1d2s31d2", new DateTime(1995, 3, 5) ,"mirza95", "123456")
         };
        
+        public static void fja()
+        { dezurniRadnici.First<DezurniRadnik>().RFID = "0006881644"; }
     }
 
 

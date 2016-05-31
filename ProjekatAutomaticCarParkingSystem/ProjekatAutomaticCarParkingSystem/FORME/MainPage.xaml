@@ -19,27 +19,31 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="13*"/>
             <RowDefinition Height="36*"/>
-            <RowDefinition Height="54*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="36*"/>
             <RowDefinition Height="110*"/>
             <RowDefinition Height="79*"/>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="74*"/>
-            <RowDefinition Height="253*"/>
+            <RowDefinition Height="116*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="77*"/>
             <RowDefinition Height="12*"/>
         </Grid.RowDefinitions>
         <Button x:Name="button" Content="Help" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="#330808FD" Click="button_Click_1"/>
-        <TextBlock x:Name="textBlock" Visibility="Collapsed" Grid.Column="3" Grid.Row="2" TextWrapping="Wrap" Text="Ukoliko želite koristiti mogučnosti automatskog parkiranja morate se prijaviti Ukoliko ne posjedujete račun, obratite se jednom od dežurnih radnika koji će vam pomoći." Grid.ColumnSpan="2" Foreground="Black" TextAlignment="Center" SelectionChanged="textBlock_SelectionChanged" Grid.RowSpan="2"/>
-        <Image x:Name="image" Margin="6.959,13.201,0.135,-0.05" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Source="ms-appx:///Assets/LogoAuto.jpg" Stretch="Fill" Grid.ColumnSpan="3">
+        <TextBlock x:Name="textBlock" Visibility="Collapsed" Grid.Column="3" Grid.Row="2" TextWrapping="Wrap" Text="Ukoliko želite koristiti mogučnosti automatskog parkiranja morate se prijaviti Ukoliko ne posjedujete račun, obratite se jednom od dežurnih radnika koji će vam pomoći." Grid.ColumnSpan="2" Foreground="Black" TextAlignment="Center" SelectionChanged="textBlock_SelectionChanged" Grid.RowSpan="3"/>
+        <Image x:Name="image" Margin="6.959,0.201,0.135,109.95" Grid.RowSpan="4" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Source="ms-appx:///Assets/LogoAuto.jpg" Stretch="Fill" Grid.ColumnSpan="3" Grid.Row="1">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-0.087"/>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="button1" Content="Prijavi se" HorizontalAlignment="Stretch" Margin="0.397800445556641,-0.0460166931152344,-0.364700317382813,0.34010124206543" Grid.Row="6" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="4" Click="button1_Click" Grid.Column="1">
+        <Button x:Name="button1" Content="Prijavi se" HorizontalAlignment="Stretch" Margin="0.398,8.954,6.635,0.34" Grid.Row="6" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="5" Click="button1_Click" Grid.Column="1" Grid.RowSpan="2">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="0.065"/>
             </Button.RenderTransform>
         </Button>
-        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="Sistem Automatskog Parkiranja" Grid.ColumnSpan="4" FontSize="30" TextAlignment="Center" Foreground="#FF1515F0"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Text="Sistem Automatskog Parkiranja" Grid.ColumnSpan="4" FontSize="30" TextAlignment="Center" Foreground="#FF1515F0"/>
+        <Button x:Name="button2" Content="Dolasci" Grid.Column="4" HorizontalAlignment="Stretch" Margin="0,3.814697265625E-06,0,-3.814697265625E-06" Grid.Row="3" VerticalAlignment="Stretch" Click="button2_Click"/>
 
 
 

@@ -30,7 +30,7 @@ namespace ProjekatAutomaticCarParkingSystem
      
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-          
+            KontejnerskaKlasa.fja();
         }
 
         private void Grid_GotFocus(object sender, RoutedEventArgs e)
@@ -58,6 +58,19 @@ namespace ProjekatAutomaticCarParkingSystem
                 if (frame != null)
                 {
                     frame.Navigate((typeof(FormaLogin)));
+                }
+            }
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaRadnikDosao)));
                 }
             }
         }

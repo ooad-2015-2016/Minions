@@ -95,6 +95,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormaPrikazDolazaka.xaml.cs">
+      <DependentUpon>FormaPrikazDolazaka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormaRadnikDosao.xaml.cs">
+      <DependentUpon>FormaRadnikDosao.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FORME\FormaDnevniIzvjestaj.xaml.cs">
       <DependentUpon>FormaDnevniIzvjestaj.xaml</DependentUpon>
     </Compile>
@@ -176,6 +182,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FormaPrikazDolazaka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaRadnikDosao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FORME\FormaDnevniIzvjestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
