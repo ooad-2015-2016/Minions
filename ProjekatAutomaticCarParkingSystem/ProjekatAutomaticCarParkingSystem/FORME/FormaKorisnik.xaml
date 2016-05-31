@@ -9,19 +9,21 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="36*"/>
-            <RowDefinition Height="163*"/>
-            <RowDefinition Height="81*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="48*"/>
             <RowDefinition Height="0*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="75*"/>
-            <RowDefinition Height="143*"/>
-            <RowDefinition Height="166*"/>
-            <RowDefinition Height="36*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="21*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>
@@ -30,15 +32,15 @@
             <ColumnDefinition Width="158*"/>
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Stretch" Margin="13,0,0,20" Grid.Row="11" VerticalAlignment="Stretch" Click="button_Click" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Button x:Name="button1" Content="Uplati" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="11" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Margin="0,0,13,20" Click="button1_Click" Grid.RowSpan="2"/>
-        <RadioButton x:Name="radioButton" Content="Uplata za sat" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,-6,0,0" Grid.Row="6" VerticalAlignment="Stretch" Checked="radioButton_Checked" Grid.ColumnSpan="2"/>
-        <RadioButton x:Name="radioButton1" Content="Uplata za dan" HorizontalAlignment="Stretch" Margin="0,-6,0,0" Grid.Row="9" VerticalAlignment="Stretch" Checked="radioButton1_Checked" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <RadioButton x:Name="radioButton2" Grid.ColumnSpan="4" Content="Uplata za mjesec" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,-6,0,0" Grid.Row="7" VerticalAlignment="Stretch" Checked="radioButton2_Checked"/>
-        <RadioButton x:Name="radioButton3" Grid.ColumnSpan="4" Content="Uplata za godinu" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,-6,0,0" Grid.Row="8" VerticalAlignment="Stretch" Checked="radioButton3_Checked"/>
-        <TextBlock x:Name="textBlock3" Grid.Column="1" Margin="10.4,20,454.4,47.4" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="1" Grid.Row="10" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" FontSize="25" Foreground="#FFF31010" TextAlignment="Center" SelectionChanged="textBlock1_SelectionChanged"/>
-        <TextBlock x:Name="textBlock4" TextWrapping="Wrap" Grid.ColumnSpan="5" SelectionChanged="textBlock4_SelectionChanged" FontSize="20" Grid.RowSpan="3">
+        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Stretch" Margin="13,84,0,20" Grid.Row="12" VerticalAlignment="Stretch" Click="button_Click" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+        <Button x:Name="button1" Content="Uplati" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="12" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Margin="0,84,13,20" Click="button1_Click" Grid.RowSpan="3"/>
+        <RadioButton x:Name="radioButton" Content="Uplata za sat" HorizontalAlignment="Stretch" Margin="13,2,0,0" Grid.Row="7" VerticalAlignment="Stretch" Checked="radioButton_Checked" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <RadioButton x:Name="radioButton1" Content="Uplata za godinu" HorizontalAlignment="Stretch" Margin="13,39,0,84" Grid.Row="10" VerticalAlignment="Stretch" Checked="radioButton1_Checked" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+        <RadioButton x:Name="radioButton2" Grid.ColumnSpan="5" Content="Uplata za dan" HorizontalAlignment="Stretch" Margin="13,-6,0,0" Grid.Row="9" VerticalAlignment="Stretch" Checked="radioButton2_Checked"/>
+        <RadioButton x:Name="radioButton3" Grid.ColumnSpan="5" Content="Uplata za mjesec" HorizontalAlignment="Stretch" Margin="13,39,0,0" Grid.Row="9" VerticalAlignment="Stretch" Checked="radioButton3_Checked" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="1" Margin="10.667,20,151,47" TextWrapping="Wrap" Text="" Grid.RowSpan="3"/>
+        <TextBlock x:Name="textBlock1" Grid.Row="12" TextWrapping="Wrap" Text="" Grid.ColumnSpan="5" FontSize="25" Foreground="#FFF31010" TextAlignment="Center" SelectionChanged="textBlock1_SelectionChanged" Margin="13,0"/>
+        <TextBlock x:Name="textBlock4" TextWrapping="Wrap" Grid.ColumnSpan="5" SelectionChanged="textBlock4_SelectionChanged" FontSize="20" Grid.RowSpan="3" Margin="0,0,-1,0">
         	<Run Text="Cjenovnik:"/>
         	<LineBreak/>
         	<Run Text="-sat                      "/>
@@ -53,12 +55,13 @@
         	<Run Text="- godina           "/>
         	<Run Foreground="#FF3363E4" Text="400KM"/>
         </TextBlock>
-        <TextBlock x:Name="textBlock" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap">
+        <TextBlock x:Name="textBlock" Grid.Row="4" TextWrapping="Wrap" Grid.ColumnSpan="2" Margin="13,0,0,0">
         	<Run/>
         	<LineBreak/>
         	<Run Text="Kreditna kartica"/>
         </TextBlock>
-        <TextBox x:Name="textBox" Grid.Column="3" Grid.Row="4" TextWrapping="Wrap" Text="" TextChanged="textBox_TextChanged_1"/>
+        <TextBox x:Name="textBox" Grid.Column="3" Grid.Row="4" TextWrapping="Wrap" Text="" TextChanged="textBox_TextChanged_1" Grid.ColumnSpan="2" Margin="0,0,13,0"/>
+        <TextBlock x:Name="textBlock2" Grid.Column="1" Margin="-2.86102294921875E-06,0,2.86102294921875E-06,0" Grid.Row="6" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" Foreground="#FFFF0A0A" TextAlignment="Center" SelectionChanged="textBlock2_SelectionChanged"/>
 
     </Grid>
 </Page>

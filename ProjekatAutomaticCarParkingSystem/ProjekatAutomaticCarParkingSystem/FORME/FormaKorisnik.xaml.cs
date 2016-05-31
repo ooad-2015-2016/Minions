@@ -48,6 +48,24 @@ namespace ProjekatAutomaticCarParkingSystem
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             if (textBox.Text.Length != 16) { textBlock1.Text = "Pogresan format broja licne karte"; return; }
+            if(radioButton.IsChecked == true)
+                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(2m, DateTime.Now, "Satni"));
+            if (radioButton2.IsChecked == true)
+                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(10m, DateTime.Now, "Dnevni"));
+            if (radioButton3.IsChecked == true)
+                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(75m, DateTime.Now, "Mjesecni"));
+            if (radioButton1.IsChecked == true)
+                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(400m, DateTime.Now, "Dnevni"));
+
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(MainPage)));
+                }
+            }
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)
@@ -86,6 +104,11 @@ namespace ProjekatAutomaticCarParkingSystem
         }
 
         private void textBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock2_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }

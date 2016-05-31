@@ -59,7 +59,7 @@ namespace ProjekatAutomaticCarParkingSystem
                 listaisplataitotal.Add(isplata.ToString());
             }
             //dodaj u listu total
-            listaisplataitotal.Add(string.Format("Ukupno isplaceno ovog mjeseca: {0}", ukupno));
+            listaisplataitotal.Add(string.Format("Ukupno isplaceno danas: {0}", ukupno));
             //postavi kao izvor podataka listu stringova
             listView.ItemsSource = listaisplataitotal;
 
@@ -70,7 +70,7 @@ namespace ProjekatAutomaticCarParkingSystem
             {
                 //razlika vremena isplate i danasnjeg datuma:
                 TimeSpan razlika = item.DatumUplate - DateTime.Now;
-                if (razlika.TotalDays < 1)
+                if (razlika.TotalDays < 0 && razlika.TotalDays > -1)
                     uplateZadnjiDan.Add(item);
             }
             listView1.ItemsSource = uplateZadnjiDan;
@@ -88,7 +88,7 @@ namespace ProjekatAutomaticCarParkingSystem
                 listauplataitotal.Add(Uplata.ToString());
             }
             //dodaj u listu total
-            listauplataitotal.Add(string.Format("Ukupno uplaceno ovog mjeseca: {0}", ukupno_uplate));
+            listauplataitotal.Add(string.Format("Ukupno uplaceno danas: {0}", ukupno_uplate));
             //postavi kao izvor podataka listu stringova
             listView1.ItemsSource = listauplataitotal;
         }
@@ -96,6 +96,19 @@ namespace ProjekatAutomaticCarParkingSystem
         private void listView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
+            if (window != null)
+            {
+                Windows.UI.Xaml.Controls.Frame frame = window.Content as Windows.UI.Xaml.Controls.Frame;
+                if (frame != null)
+                {
+                    frame.Navigate((typeof(FormaVlasnikIzvjestaji)));
+                }
+            }
         }
     }
 }

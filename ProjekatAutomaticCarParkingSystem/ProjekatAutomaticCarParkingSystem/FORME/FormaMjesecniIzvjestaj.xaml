@@ -9,18 +9,21 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Grid_Loaded" Height="640" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="303*"/>
-            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="177*"/>
+            <ColumnDefinition Width="11*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20*"/>
             <RowDefinition Height="303*"/>
-            <RowDefinition Height="297*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="274*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged" Grid.Row="1" Margin="9.5367431640625E-07,0,-9.5367431640625E-07,0" Grid.Column="1"/>
-        <ListView x:Name="listView1" Grid.Column="1" Margin="-2.86102294921875E-06,0,2.86102294921875E-06,0" Grid.Row="2" RenderTransformOrigin="0.486,0.54" SelectionChanged="listView1_SelectionChanged"/>
+        <ListView x:Name="listView" SelectionChanged="listView_SelectionChanged" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ListView x:Name="listView1" Grid.Row="2" RenderTransformOrigin="0.486,0.54" SelectionChanged="listView1_SelectionChanged" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="button" Content="Nazad" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="10" Grid.Column="1" Click="button_Click"/>
 
     </Grid>
 </Page>
