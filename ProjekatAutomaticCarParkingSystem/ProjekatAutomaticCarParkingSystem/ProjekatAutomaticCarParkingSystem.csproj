@@ -98,6 +98,9 @@
     <Compile Include="FormaDnevniIzvjestaj.xaml.cs">
       <DependentUpon>FormaDnevniIzvjestaj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormaGodisnjiIzvjestaj.xaml.cs">
+      <DependentUpon>FormaGodisnjiIzvjestaj.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FORME\FormaKorisnik.xaml.cs">
       <DependentUpon>FormaKorisnik.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="FormaDnevniIzvjestaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FormaGodisnjiIzvjestaj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

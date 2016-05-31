@@ -24,7 +24,7 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="button" Content="Dnevni izvještaj" Grid.Column="1" HorizontalAlignment="Stretch" Margin="9.5367431640625E-07,0,-9.5367431640625E-07,0" Grid.Row="1" VerticalAlignment="Stretch" Background="#33F509D5" FontSize="32" Click="button_Click"/>
         <Button x:Name="button1" Content="Mjesečni izvještaj" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-7.62939453125E-06,2.86102294921875E-06,7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" Background="#3317E82A" FontSize="32" Click="button1_Click"/>
-        <Button x:Name="button2" Content="Godišnji izvještaj" Grid.Column="1" HorizontalAlignment="Stretch" Margin="-2.86102294921875E-06,-7.62939453125E-06,2.86102294921875E-06,-2.288818359375E-05" Grid.Row="5" VerticalAlignment="Stretch" Background="#330046FF" FontSize="32"/>
+        <Button x:Name="button2" Content="Godišnji izvještaj" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0.667,0.333,13,0" Grid.Row="5" VerticalAlignment="Top" Background="#330046FF" FontSize="32" Grid.ColumnSpan="2" Height="146" Grid.RowSpan="2" Click="button2_Click"/>
 
     </Grid>
 </Page>

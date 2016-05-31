@@ -20,7 +20,8 @@ namespace ProjekatAutomaticCarParkingSystem
         {
             new KLASE.Uplata(400m,new DateTime(2016,5,17),"Godišnja"),
             new KLASE.Uplata(75m,new DateTime(2016,5,17),"Mjesečna"),
-            new KLASE.Uplata(10m,new DateTime(2016,4,17),"Dnevna")
+            new KLASE.Uplata(10m,new DateTime(2016,3,17),"Dnevna"),
+            new KLASE.Uplata(75m,new DateTime(2015,5,17),"Mjesečna")
 
 
         };
