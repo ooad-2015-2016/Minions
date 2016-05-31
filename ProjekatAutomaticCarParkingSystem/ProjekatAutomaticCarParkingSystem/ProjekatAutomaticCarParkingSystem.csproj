@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormaPozivanjeMajstora.xaml.cs">
+      <DependentUpon>FormaPozivanjeMajstora.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormaPrikazDolazaka.xaml.cs">
       <DependentUpon>FormaPrikazDolazaka.xaml</DependentUpon>
     </Compile>
@@ -182,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FormaPozivanjeMajstora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FormaPrikazDolazaka.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

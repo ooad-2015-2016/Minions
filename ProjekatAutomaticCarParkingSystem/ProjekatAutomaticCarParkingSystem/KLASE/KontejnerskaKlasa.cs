@@ -35,7 +35,7 @@ namespace ProjekatAutomaticCarParkingSystem
         public static List<IzvjestajMajstora> izvjestajiMajstvora = new List<IzvjestajMajstora>();
         public static List<Majstor> majstori = new List<Majstor>
         {
-            new Majstor("Sedin", "Pasalic", "Puhovac", "214029141", "93529kjfsa", new DateTime(1995, 2, 12), "sedin95", "1234")
+            new Majstor("Sedin", "Pasalic", "00387745521", "Puhovac", "12345678912345", new DateTime(1995, 2, 12), "sedin95", "1234")
         };
         public static List<Supervizor> supervizori = new List<Supervizor>();
         public static List<Korisnik> korisnici = new List<Korisnik>

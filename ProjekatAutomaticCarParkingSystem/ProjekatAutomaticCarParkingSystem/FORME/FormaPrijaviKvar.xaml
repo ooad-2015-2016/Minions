@@ -23,7 +23,7 @@
             <RowDefinition Height="171*"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="textBlock" Grid.Column="1" Margin="1.9073486328125E-06,0,-1.9073486328125E-06,0" Grid.Row="1" TextWrapping="Wrap" Text="Prijavi kvar" FontSize="32" TextAlignment="Center" Foreground="#FFF11111"/>
-        <Button x:Name="button" Content="Pozovi majstora" Grid.Column="1" HorizontalAlignment="Stretch" Margin="1.9073486328125E-06,7.62939453125E-06,-1.9073486328125E-06,-7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3333EE09"/>
+        <Button x:Name="button" Content="Pozovi majstora" Grid.Column="1" HorizontalAlignment="Stretch" Margin="1.9073486328125E-06,7.62939453125E-06,-1.9073486328125E-06,-7.62939453125E-06" Grid.Row="3" VerticalAlignment="Stretch" FontSize="32" Background="#3333EE09" Click="button_Click"/>
         <Button x:Name="button1" Content="Odustani" Grid.Column="1" HorizontalAlignment="Stretch" Margin="1.9073486328125E-06,7.62939453125E-06,-1.9073486328125E-06,-7.62939453125E-06" Grid.Row="5" VerticalAlignment="Stretch" FontSize="32" Background="#33EC1919" Click="button1_Click"/>
 
     </Grid>

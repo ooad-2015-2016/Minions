@@ -53,9 +53,9 @@ namespace ProjekatAutomaticCarParkingSystem
             if (radioButton2.IsChecked == true)
                 KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(10m, DateTime.Now, "Dnevni"));
             if (radioButton3.IsChecked == true)
-                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(75m, DateTime.Now, "Mjesecni"));
+                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(75m, DateTime.Now, "Mjesečni"));
             if (radioButton1.IsChecked == true)
-                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(400m, DateTime.Now, "Dnevni"));
+                KontejnerskaKlasa.uplate.Add(new KLASE.Uplata(400m, DateTime.Now, "Godišnji"));
 
             Windows.UI.Xaml.Window window = Windows.UI.Xaml.Window.Current;
             if (window != null)
