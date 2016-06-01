@@ -61,8 +61,8 @@
         <TextBox x:Name="textBox3" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="17" TextWrapping="Wrap" Text=""/>
         <TextBlock x:Name="textBlock5" Grid.Row="19" TextWrapping="Wrap" Text="Opis popravke" Grid.ColumnSpan="3" Grid.Column="1"/>
         <TextBox x:Name="textBox4" Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="21" TextWrapping="Wrap" Text=""/>
-        <Button x:Name="button" Content="Natrag" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="27" VerticalAlignment="Stretch" Click="button_Click" Grid.ColumnSpan="2" Margin="0,0,20.333,0"/>
-        <Button x:Name="button1" Content="OK" Grid.Column="2" HorizontalAlignment="Stretch" Margin="20.333,0,0,0" Grid.Row="27" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Click="button1_Click_1"/>
+        <Button x:Name="button" Content="Natrag" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="27" VerticalAlignment="Stretch" Click="button_Click"/>
+        <Button x:Name="button1" Content="OK" Grid.Column="3" HorizontalAlignment="Stretch" Margin="-7.62939453125E-06,0,7.62939453125E-06,0" Grid.Row="27" VerticalAlignment="Stretch" Click="button1_Click_1"/>
         <TextBox x:Name="textBox5" Grid.Row="23" TextWrapping="Wrap" Text="" TextChanged="textBox5_TextChanged" Grid.Column="2" Margin="3.72529029846191E-06,0,-1.89840793609619E-05,0" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="textBlock7" Grid.Column="1" Grid.Row="23" TextWrapping="Wrap" Text="Cijena" RenderTransformOrigin="-3.43,1.583" Grid.ColumnSpan="2" Margin="0,0,16.333,0"/>
         <TextBlock x:Name="textBlock6" Grid.Column="1" Grid.Row="24" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3" Foreground="#FFF31212" SelectionChanged="textBlock6_SelectionChanged" Grid.RowSpan="2"/>
