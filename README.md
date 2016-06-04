@@ -97,3 +97,18 @@ Takoder korisnik vidi i cjenovnik koji mu moze pomoci pri odabiru navedenih opci
 
 Dezurni radnik poziva majstora u slucaju kvara. Takoder on prijavljuje nove korisnike parkinga koji dolaze prvi put. Poziv majstora se
 vrsi telefonskim pozivom.
+
+
+
+
+
+-Eksterni uredjaj koji je koristen-RFID 
+https://github.com/ooad-2015-2016/Minions/blob/master/ProjekatAutomaticCarParkingSystem/ProjekatAutomaticCarParkingSystem/FORME/FormaUnosDezurnogRadnika.xaml.cs
+
+-Ispostovane validacije : 
+https://github.com/ooad-2015-2016/Minions/blob/master/ProjekatAutomaticCarParkingSystem/ProjekatAutomaticCarParkingSystem/FORME/FormaUnosKorisnikavol2.xaml.cs
+
+https://github.com/ooad-2015-2016/Minions/blob/master/ProjekatAutomaticCarParkingSystem/ProjekatAutomaticCarParkingSystem/FORME/FormaUnosDezurnogRadnika.xaml.cs
+
+ 
+
