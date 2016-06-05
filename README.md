@@ -110,5 +110,8 @@ https://github.com/ooad-2015-2016/Minions/blob/master/ProjekatAutomaticCarParkin
 
 https://github.com/ooad-2015-2016/Minions/blob/master/ProjekatAutomaticCarParkingSystem/ProjekatAutomaticCarParkingSystem/FORME/FormaUnosDezurnogRadnika.xaml.cs
 
- 
+-Prilagodjavanje ui windows phone uredjaju ispostovan na svakoj formi pomocu grida.
+-Mobilna funkcionalnost nije implemetirana.
+
+
 
